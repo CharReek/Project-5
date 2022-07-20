@@ -20,3 +20,5 @@ url to sitemap:
 testimonials reviews and ratiting 
 
 a custom selection of items - big sister swap 
+ 
+ 5 colours - black, white , 32493A , 90B06D , DFCED4
