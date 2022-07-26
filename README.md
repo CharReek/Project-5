@@ -2,6 +2,7 @@ sell sustainable/ second hand clothing
 
 Reworn
 
+Font - Quicksand
 
 seo - keywords
 wordtracker.com -see how many time a key word is searched for 
