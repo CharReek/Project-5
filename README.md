@@ -1,6 +1,6 @@
 sell sustainable/ second hand clothing 
 
-Reworn
+Reworn - logo done
 
 Font - Quicksand
 
@@ -22,3 +22,4 @@ a custom selection of items - big sister swap
  5 colours - black, white , 32493A , 90B06D , DFCED4
 
 will only have 1 of each product and wont have a size 
+
