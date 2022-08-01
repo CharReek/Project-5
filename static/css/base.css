@@ -3,14 +3,31 @@ html {
 }
 
 body {
-    background: url('/media/20211205_142924.jpg') no-repeat center center fixed;
-    background-size: cover;
-    height: calc(100vh - 164px);
-    color: #555;
-    font-family: 'Lato';
+    font-family: 'Quicksand', sans-serif;
 }
+/* logo */
+.logo{
+    height: 64px;
+    padding-left:20px;
+}
+/* logo end*/
 
-/* from Bulma */
+/* topnav */
+.topnav-bg{
+    background-color: #000;
+}
+/* topnav end */
+
+/* dropdown menu  */
+.dropdown-menu{
+    background-color: #000;
+}
+.dropdown-item {
+color: white;
+}
+/* dropsown menu end */
+
+/* icons */
 .icon {
     align-items: center;
     display: inline-flex;
@@ -18,45 +35,21 @@ body {
     height: 1.5rem;
     width: 1.5rem;
 }
-
-.logo-font {
-    text-transform: uppercase;
-}
-
-.main-logo-link {
-    width: fit-content;
-}
-
-.shop-now-button {
-    background: black;
-    color: white;
-    min-width: 260px;
-}
-
-.btn-black {
-    background: black;
+.search{
     color: white;
 }
 
-.shop-now-button:hover,
-.shop-now-button:active,
-.shop-now-button:focus,
-.btn-black:hover,
-.btn-black:active,
-.btn-black:focus {
-    background: #222;
-    color: white;
-}
+/* icons end */
 
-.text-black {
-    color: #000 !important;
+/* product slider */
+.swiper {
+    width: 70%;
+    height: 50%;
+    margin-top: 20px;
+    margin-bottom: 40px;
+    z-index: 0;
 }
-
-.border-black {
-    border: 1px solid black !important;
-}
-
-/* -------------------------------- Media Queries */
+/* Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
