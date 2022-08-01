@@ -12,11 +12,21 @@ body {
 }
 /* logo end*/
 
-/* topnav */
+/* nav */
 .topnav-bg{
     background-color: #000;
 }
-/* topnav end */
+.nav-link{
+    margin: 0 10px;
+}
+.menu-nav-link{
+    color: white;
+    margin: 0 60px ;
+}
+.navbar-toggler {
+    border: 1px solid white;
+}
+/* nav end */
 
 /* dropdown menu  */
 .dropdown-menu{
@@ -25,7 +35,7 @@ body {
 .dropdown-item {
 color: white;
 }
-/* dropsown menu end */
+/* dropdown menu end */
 
 /* icons */
 .icon {
@@ -40,6 +50,14 @@ color: white;
 }
 
 /* icons end */
+
+/* hr */
+
+hr{
+    width: 60%;
+    border:1px solid #90b06d;
+}
+/* hr end */
 
 /* product slider */
 .swiper {
@@ -71,4 +89,7 @@ color: white;
     .header-container {
         padding-top: 164px;
     }
+    
+    
+
 }
