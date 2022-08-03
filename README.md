@@ -24,3 +24,5 @@ a custom selection of items - big sister swap
 will only have 1 of each product and wont have a size 
 
 Bootstrap collapsible nav bar - base code from documntation 
+
+credits - https://www.panaprium.com/blogs/i/eco-clothing benefit text

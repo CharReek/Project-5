@@ -11,74 +11,114 @@
 {% endblock %}
 
 {% block content %}
-<div class="container h-100 header-section">
-    <div class="row h-100">
-        <div class="col-7 col-md-6 my-auto">
-            <h1 class="header-text">
-                Shop New in
-            </h1>
-            <div class="my-5">
-                <h4>
-                    <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-                </h4>
-            </div>
+<div class="container header-section">
+    <div class="col-12 header-text">
+        <h1>
+           Shop Recycled Fashion
+        </h1>
+        <div class="shop-now-button">
+            <a href="" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
         </div>
     </div>
 </div>
-<hr>
-<div class="swiper">
-    <!-- <div class="swiper-wrapper">
-        <div class="swiper-slide">
-            <a href="#" target="_blank">
-            <img class="swiper-slide" src="/media/test1.png" alt="">
+<div class="container">
+    <div class="row benefits">
+        <div class="col-12 benefits-title">
+            <h1>Benefits of Sustainable fashion</h1>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <h3 class="benefits-subtitle"> Saves Natural Resources</h3>
+            <p class="benefits-text"> 80% of global deforestation is a result of agricultural production. Cotton is the most widely used
+                natural fiber in fashion, it accounts for 2.5% of all agricultural areas. The fashion industry produces
+                17-20% of all wastewater worldwide. Industrial water pollution comes from
+                fabric manufacturing processes. And only 20% of globally produced wastewater receives proper treatment.
+            </p>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <h3 class="benefits-subtitle"> Defends human rights</h3>
+            <p class="benefits-text">Many fashion brands and retailers still use sweatshop-like conditions to produce their clothes. They
+                practice inhumane manufacturing methods to cheaply produce low-quality and disposable clothing for
+                high-street stores.Factory workers, mostly young women and even children, are paid below the legal
+                minimum wage, forced to
+                work long hours (up to 100 hours a week) in unsafe environments. They don't have access to healthcare or
+                paid leaves.</p>
+        </div>
+        <div class="col-lg-4 col-sm-12">
+            <h3 class="benefits-subtitle"> Reduces pollution and waste</h3>
+            <p class="benefits-text">Clothing is piling up in landfills at an alarming rate. The fashion industry produces tons of waste and
+                pollution every year. 16.9 million tons of used textile wastes are generated each year in the United
+                States alone. Cheap synthetic materials such as polyester,
+                nylon, or acrylic are especially dangerous. They aren't biodegradable and take up to thousands of years
+                to decompose. As they break down, they release toxic gases, carbon dioxide, and methane, very potent
+                greenhouse gases, into the atmosphere.</p>
+        </div>
+    </div>
+</div>
+<div class="new-in">
+    <div class="row new-in-container">
+        <div class="col-lg-4 col-sm-12">
+            <a href="#" class="new-in-product new-in-product-1">
+                <div class="new-in-image">
+                    <picture>
+                        <img src="/media/test1.png" alt="">
+                    </picture>
+                </div>
+                <div class="new-in-details">
+                    <div class="new-in-brand">
+                        brand
+                    </div>
+                    <div class="new-in-name">
+                        name
+                    </div>
+                </div>
             </a>
         </div>
-        <div class="swiper-slide">
-            <a href="#" target="_blank">
-            <img class="swiper-slide" src="/media/test2.png" alt="">
-            </a>
+        <div class="col-lg-4 col-sm-12 new-in-title">
+            <h2 class=" text-white">
+                NEW ARRIVALS
+            </h2>
         </div>
-        <div class="swiper-slide">
-            <a href="#" target="_blank">
-            <img class="swiper-slide" src="/media/test3.png" alt="">
+        <div class="col-lg-4 col-sm-12">
+            <a href="#" class="new-in-product new-in-product-2">
+                <div class="new-in-image">
+                    <picture>
+                        <img src="/media/test2.png" alt="">
+                    </picture>
+                </div>
+                <div class="new-in-details">
+                    <div class="new-in-brand">
+                        brand
+                    </div>
+                    <div class="new-in-name">
+                        name
+                    </div>
+                </div>
             </a>
         </div>
     </div>
-    <div class="swiper-button-prev"></div>
-    <div class="swiper-button-next"></div> -->
-    <h1> swiper</h1>
 </div>
-<hr>
-
-<script>
-    const swiper = new Swiper('.swiper',{
-        slidesPerView: 3,
-            spaceBetween: 50,
-        direction: 'horizontal',
-        loop: true,
-        speed: 2000,
-            navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-            },
-            breakpoints: {
-          1300: {
-            slidesPerView: 3,
-            spaceBetween: 30,
-          },
-          1021: {
-            slidesPerView: 2.3,
-            spaceBetween: 10,
-          },
-          768: {
-             slidesPerView: 1.3,
-            spaceBetween: 10,
-          },
-          350: {
-            slidesPerView: 1,
-            spaceBetween: 10,
-          }
-        },
-    })
-</script>
+<div class="container">
+    <div class="row benefits">
+        <div class="col-12 benefits-title">
+            <h1>Benefits of Sustainable fashion</h1>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <h3 class="benefits-subtitle"> Saves Natural Resources</h3>
+            <p class="benefits-text"> 80% of global deforestation is a result of agricultural production. Cotton is the most widely used
+                natural fiber in fashion, it accounts for 2.5% of all agricultural areas. The fashion industry produces
+                17-20% of all wastewater worldwide. Industrial water pollution comes from
+                fabric manufacturing processes. And only 20% of globally produced wastewater receives proper treatment.
+            </p>
+        </div>
+        <div class="col-lg-6 col-sm-12">
+            <h3 class="benefits-subtitle"> Defends human rights</h3>
+            <p class="benefits-text">Many fashion brands and retailers still use sweatshop-like conditions to produce their clothes. They
+                practice inhumane manufacturing methods to cheaply produce low-quality and disposable clothing for
+                high-street stores.Factory workers, mostly young women and even children, are paid below the legal
+                minimum wage, forced to
+                work long hours (up to 100 hours a week) in unsafe environments. They don't have access to healthcare or
+                paid leaves.</p>
+        </div>
+    </div>
+</div>
 {% endblock%}
