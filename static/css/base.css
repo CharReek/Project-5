@@ -76,18 +76,21 @@ color: white;
 }
 /* header section end */
 
-.benefits{
+.text-section{
     justify-content: center;
     text-align: center;
     margin: 60px 80px;
     color: #324934;
 }
-.benefits-title{
+.title{
     margin: 20px 0 70px;
     text-decoration: underline 2px #dfced4;
 }
-.benefits i {
-    height: 200px;
+.subtitle {
+    text-decoration: 2px underline #dfced4;
+}
+.text-section i {
+    padding-bottom: 25px;
 }
 
 /* icons */
@@ -119,7 +122,7 @@ color: white;
 .new-in-product{
     justify-content: center;
     text-align: center;
-    margin: 100px;
+    margin: 50px 0;
 }
 .new-in-text{
     text-align: center;
@@ -148,6 +151,24 @@ color: white;
     font-size: 20px;
 }
 
+.top-box{
+    height: 20px;
+    width: 226px;
+    background-color: purple;
+    top: 50%;
+    left: 50%;
+    transform: translate(-113px, -193px);
+    position: absolute;
+}
+.bottom-box{
+    height: 20px;
+    width: 226px;
+    background-color: red;
+    bottom: 50%;
+    right: 50%;
+    transform: translate(113px, 193px);
+    position: absolute;
+}
  /* Media Queries */
 
 /* Slightly larger container on xl screens */
