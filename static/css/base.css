@@ -5,6 +5,10 @@ html {
 body {
     font-family: 'Quicksand', sans-serif;
 }
+
+.header-container{
+    padding-top: 165px;
+}
 /* logo */
 .logo{
     height: 64px;
