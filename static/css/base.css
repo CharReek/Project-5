@@ -7,7 +7,7 @@ body {
 }
 
 .header-container{
-    padding-top: 165px;
+    padding-top: 80px;
 }
 /* logo */
 .logo{
@@ -49,6 +49,8 @@ color: white;
     justify-content: center;
     width: 100%;
     overflow: hidden;
+    max-width: 1900px;
+    padding: 0;
 }
 
 .header-text{
@@ -110,6 +112,7 @@ color: white;
 }
 /* icons end */
 
+/* New in section */
 
 .new-in{
     background-color: #dfced4;
@@ -173,6 +176,21 @@ color: white;
     transform: translate(113px, 193px);
     position: absolute;
 }
+/* New in section end  */
+
+/* product page */
+.product-name{
+font-size: 25px;
+text-transform: uppercase;
+}
+
+.product{
+    justify-content: center;
+    text-align: center;
+}
+
+/* product page end */
+.
  /* Media Queries */
 
 /* Slightly larger container on xl screens */
