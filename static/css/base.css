@@ -9,6 +9,10 @@ body {
 .header-container{
     padding-top: 80px;
 }
+.header-container-pp{
+    padding-top: 200px;
+
+}
 /* logo */
 .logo{
     height: 64px;
@@ -190,6 +194,18 @@ text-transform: uppercase;
 }
 
 /* product page end */
+/* product details page */
+.product-text{
+    font-size: 30px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+.product-price{
+    font-size: 30px;
+    margin: auto;
+    padding-bottom: 30px;
+}
+/* product details page end */
 .
  /* Media Queries */
 
