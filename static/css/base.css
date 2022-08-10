@@ -5,7 +5,9 @@ html {
 body {
     font-family: 'Quicksand', sans-serif;
 }
-
+a:hover{
+    color: #90b06d;
+}
 .header-container{
     padding-top: 80px;
 }
@@ -29,7 +31,7 @@ body {
 }
 .menu-nav-link{
     color: white;
-    margin: 0 60px ;
+    margin: 10px 60px ;
 }
 .navbar-toggler {
     border: 1px solid white;
@@ -186,10 +188,9 @@ color: white;
 .product-name{
 font-size: 22px;
 text-transform: uppercase;
-text-decoration: underline 1px #90b06d;
 }
 .product-price{
-    font-size: 30px;
+    font-size: 20px;
     margin: auto;
 }
 .product{
@@ -214,6 +215,9 @@ text-decoration: underline 1px #90b06d;
     font-size: 30px;
     margin: auto;
     padding-bottom: 30px;
+}
+.product-description{
+    margin: 20px 0;
 }
 /* product details page end */
 .
