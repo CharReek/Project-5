@@ -184,15 +184,24 @@ color: white;
 
 /* product page */
 .product-name{
-font-size: 25px;
+font-size: 22px;
 text-transform: uppercase;
+text-decoration: underline 1px #90b06d;
 }
-
+.product-price{
+    font-size: 30px;
+    margin: auto;
+}
 .product{
     justify-content: center;
     text-align: center;
 }
-
+.card-body{
+    padding: 0.75rem;
+}
+.card-footer{
+    padding: 0;
+}
 /* product page end */
 /* product details page */
 .product-text{
@@ -200,7 +209,8 @@ text-transform: uppercase;
     margin: auto;
     padding-bottom: 30px;
 }
-.product-price{
+
+.product-price-pd{
     font-size: 30px;
     margin: auto;
     padding-bottom: 30px;
