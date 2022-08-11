@@ -62,7 +62,7 @@ color: white;
     justify-content: center;
     width: 100%;
     overflow: hidden;
-    max-width: 1900px;
+    max-width: 1930px;
     padding: 0;
 }
 
@@ -92,6 +92,12 @@ color: white;
 .shop-now-button a:hover {
  background-color: aqua;
  border: 1px solid pink;
+}
+.header-image{
+    height: auto;
+    width: 100%;
+    background-position: center;
+
 }
 /* header section end */
 

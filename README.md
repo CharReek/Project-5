@@ -3,6 +3,7 @@ sell sustainable/ second hand clothing
 Reworn - logo done
 
 Font - Quicksand
+https://unsplash.com/s/photos/clothing
 
 seo - keywords
 wordtracker.com -see how many time a key word is searched for 
