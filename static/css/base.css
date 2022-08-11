@@ -5,6 +5,9 @@ html {
 body {
     font-family: 'Quicksand', sans-serif;
 }
+.product-row{
+    min-width: 100%;
+}
 a:hover{
     color: #90b06d;
 }
@@ -36,6 +39,9 @@ a:hover{
 .navbar-toggler {
     border: 1px solid white;
 }
+.navbar-toggler-icon{
+    color: #dfced4;
+}
 /* nav end */
 
 /* dropdown menu  */
@@ -45,6 +51,7 @@ a:hover{
 .dropdown-item {
 color: white;
 }
+
 /* dropdown menu end */
 
 /* Header section */

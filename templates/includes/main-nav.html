@@ -1,25 +1,14 @@
 <div class="collapse navbar-collapse" id="main-nav">
     <ul class="navbar-nav w-auto mx-auto">
         <li class="nav-item dropdown">
-            <a class="menu-nav-link" href="#" id="new-in" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                New In
-            </a>
-            <div class="dropdown-menu border-0" aria-labelledby="new-in">
-                <a href="" class="dropdown-item">Clothing</a>
-                <a href="" class="dropdown-item">Footwear</a>
-                <a href="" class="dropdown-item">Accessories</a>
-                <a href="{% url 'products' %}" class="dropdown-item">View All </a>
-            </div>
-        </li>
-        <li class="nav-item dropdown">
             <a class="menu-nav-link " href="#" id="clothing-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                 Clothing 
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="clothing-link">
-                <a href="" class="dropdown-item">Dresses</a>
-                <a href="" class="dropdown-item">Tops</a>
-                <a href="" class="dropdown-item">Bottoms</a>
-                <a href="" class="dropdown-item">Jackets &amp; Coats</a>
+                <a href="{% url 'products' %}?category=dresses" class="dropdown-item">Dresses</a>
+                <a href="{% url 'products' %}?category=tops" class="dropdown-item">Tops</a>
+                <a href="{% url 'products' %}?category=bottoms" class="dropdown-item">Bottoms</a>
+                <a href="{% url 'products' %}?category=jackets,coats" class="dropdown-item">Jackets &amp; Coats</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -27,10 +16,10 @@
                 Footwear
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="footwear-link">
-                <a href="" class="dropdown-item">Heels</a>
-                <a href="" class="dropdown-item">Boots</a>
-                <a href="" class="dropdown-item">Trainer</a>
-                <a href="" class="dropdown-item">View All Footwear</a>
+                <a href="{% url 'products' %}?category=heels" class="dropdown-item">Heels</a>
+                <a href="{% url 'products' %}?category=boots" class="dropdown-item">Boots</a>
+                <a href="{% url 'products' %}?category=trainer" class="dropdown-item">Trainer</a>
+                <a href="{% url 'products' %}?category=heels,boots,trainers" class="dropdown-item">View All Footwear</a>
             </div>
         </li>
         <li class="nav-item dropdown">
@@ -38,10 +27,10 @@
                 Accessories
             </a>
             <div class="dropdown-menu border-0" aria-labelledby="Accessories-link">
-                <a href="" class="dropdown-item">Hair Accessories</a>
-                <a href="" class="dropdown-item">Bags</a>
-                <a href="" class="dropdown-item">Scarfs</a>
-                <a href="" class="dropdown-item">View All Accessories</a>
+                <a href="{% url 'products' %}?category=hair_accessories" class="dropdown-item">Hair Accessories</a>
+                <a href="{% url 'products' %}?category=bags" class="dropdown-item">Bags</a>
+                <a href="{% url 'products' %}?category=scarfs" class="dropdown-item">Scarfs</a>
+                <a href="{% url 'products' %}?category=hair_accessories,bags,scarfs" class="dropdown-item">View All Accessories</a>
             </div>
         </li>
     </ul>
