@@ -57,19 +57,22 @@ color: white;
 /* Header section */
 .header-section{
     height: 550px;
-    background-color: #90b06d;
     text-align: center;
     justify-content: center;
     width: 100%;
     overflow: hidden;
     max-width: 1930px;
     padding: 0;
+   display: block;
 }
 
 .header-text{
-    left: 50%;
+    left: 20%;
     top: 50%;
     transform: translate(-50%, -50%);
+    z-index: 1;
+    position: absolute;
+    color: white;
 }
 .shop-now-button{
     width: 100%;
@@ -97,7 +100,7 @@ color: white;
     height: auto;
     width: 100%;
     background-position: center;
-
+    z-index: -1;
 }
 /* header section end */
 
