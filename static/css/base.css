@@ -227,11 +227,19 @@ text-transform: uppercase;
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background-color: red;
+    background-color: #dfced4;
 }
 
 .btt-link {
     cursor: pointer;
+}
+.badge {
+    color: #324934;
+    background-color: #dfced4;
+    border: #324934;
+}
+.category-badge{
+    font-size: 18px;
 }
 /* product page end */
 
