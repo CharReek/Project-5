@@ -26,4 +26,4 @@ will only have 1 of each product and wont have a size
 
 Bootstrap collapsible nav bar - base code from documntation 
 
-credits - https://www.panaprium.com/blogs/i/eco-clothing benefit text
+credits - https://www.panaprium.com/blogs/i/eco-clothing benefit text sort section code intitute 
