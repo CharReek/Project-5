@@ -1,7 +1,6 @@
 html {
     height: 100%;
 }
-
 body {
     font-family: 'Quicksand', sans-serif;
 }
@@ -219,7 +218,23 @@ text-transform: uppercase;
 .card-footer{
     padding: 0;
 }
+.view-all a{
+    color: #90b06d;
+}
+.btt-button {
+    height: 42px;
+    width: 42px;
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    background-color: red;
+}
+
+.btt-link {
+    cursor: pointer;
+}
 /* product page end */
+
 /* product details page */
 .product-text{
     font-size: 30px;
@@ -236,7 +251,7 @@ text-transform: uppercase;
     margin: 20px 0;
 }
 /* product details page end */
-.
+
  /* Media Queries */
 
 /* Slightly larger container on xl screens */
