@@ -33,7 +33,7 @@
                 <p class="mb-0 product-text">{{ product.name }}</p>
                 <p class="product-price-pd">£{{ product.price }}</p>
                 {% if product.category %}
-                <p class="small mt-1 mb-0">
+                <p class="small">
                     <a class="text-muted" href="{% url 'products' %}?category={{ product.category.name }}">
                         <i class="fas fa-tag mr-1"></i>{{ product.category.friendly_name }}
                     </a>

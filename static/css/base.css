@@ -66,8 +66,8 @@ color: white;
 }
 
 .header-text{
-    left: 20%;
-    top: 50%;
+    left: 25%;
+    top: 45%;
     transform: translate(-50%, -50%);
     z-index: 1;
     position: absolute;
@@ -101,6 +101,7 @@ color: white;
     background-position: center;
     z-index: -1;
 }
+
 /* header section end */
 
 .text-section{
@@ -134,12 +135,12 @@ color: white;
 /* icons end */
 
 /* New in section */
-
 .new-in{
     background-color: #dfced4;
     height: auto;
     overflow: hidden;
 }
+
 .new-in-container{
     display: flex;
     position: relative;
@@ -152,12 +153,14 @@ color: white;
     text-align: center;
     margin: 50px 0;
 }
+
 .new-in-text{
     text-align: center;
     justify-content: center;
     padding: 20px;
     color: #324934;
 }
+
 .new-in-text a{
     color: #324934;
     height: 60px;
@@ -171,9 +174,11 @@ color: white;
     font-weight: 400;
     text-transform: uppercase;
 }
+
 .new-in-title{
     padding-bottom: 70px;
 }
+
 .new-in-details{
     color: #324934;
     font-size: 20px;
@@ -204,23 +209,28 @@ color: white;
 font-size: 22px;
 text-transform: uppercase;
 }
+
 .product-price{
     font-size: 20px;
     margin: auto;
 }
+
 .product{
     justify-content: center;
     text-align: center;
 }
+
 .card-body{
     padding: 0.75rem;
 }
+
 .card-footer{
     padding: 0;
 }
 .view-all a{
     color: #90b06d;
 }
+
 .btt-button {
     height: 42px;
     width: 42px;
@@ -233,11 +243,13 @@ text-transform: uppercase;
 .btt-link {
     cursor: pointer;
 }
+
 .badge {
     color: #324934;
     background-color: #dfced4;
     border: #324934;
 }
+
 .category-badge{
     font-size: 18px;
 }
@@ -247,20 +259,49 @@ text-transform: uppercase;
 .product-text{
     font-size: 30px;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
 
 .product-price-pd{
-    font-size: 30px;
+    font-size: 25px;
     margin: auto;
-    padding-bottom: 30px;
+    padding-bottom: 25px;
 }
+
 .product-description{
     margin: 20px 0;
 }
 /* product details page end */
 
- /* Media Queries */
+/* Login & Logout */
+
+.signin-out{
+    padding-top: 150px;
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    color: #324934;
+}
+.sub-header{
+    font-size: 22px;
+}
+.sub-header a {
+    color: #90b06d;
+    text-decoration: underline 1px solid;
+}
+.submit-button{
+    background-color: #dfced4;
+    color: #324934;
+    border-radius: 15px;
+    padding: 10px 60px;
+    font-size: 20px;
+    border: solid 2px #324934;
+    margin: 30px;
+}
+
+/* Login & Logout End */
+
+/* Media Queries */
 
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
