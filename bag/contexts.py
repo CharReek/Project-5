@@ -30,7 +30,7 @@ def bag_contents(request):
                     'item_id': item_id,
                     'quantity': item_data,
                     'product': product,
-                    'size': size
+                    'size': size,
                     })
 
     if total < settings.FREE_DELIVERY_THRESHOLD:
@@ -47,7 +47,7 @@ def bag_contents(request):
         'total': total,
         'product_count': product_count,
         'delivery': delivery,
-        'free_delievry_delta': free_delivery_delta,
+        'free_delivery_delta': free_delivery_delta,
         'free_delivery_threshold': settings.FREE_DELIVERY_THRESHOLD,
         'grand_total': grand_total,
     }

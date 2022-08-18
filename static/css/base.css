@@ -237,7 +237,7 @@ text-transform: uppercase;
     position: fixed;
     bottom: 10px;
     right: 10px;
-    background-color: #dfced4;
+    background-color: #90b06d;
 }
 
 .btt-link {
@@ -252,6 +252,9 @@ text-transform: uppercase;
 
 .category-badge{
     font-size: 18px;
+}
+#sort-selector{
+    border: #324934 1px solid;
 }
 /* product page end */
 
@@ -276,12 +279,12 @@ text-transform: uppercase;
     border: 2px solid #324934;
 }
 .product-size{
-    border: 1px solid #dfced4;
+    border: 1px solid #324934;
     padding: 6px;
     border-radius: 4px;
 }
 .qty_input{
-    border: 1px solid #dfced4;
+    border: 1px solid #324934;
 }
 /* product details page end */
 
@@ -324,7 +327,6 @@ text-transform: uppercase;
 .table-container{
     width: 100%;
     justify-content: center;
-    text-align: center;
     margin: auto;
     color: #324934;
 }
@@ -340,9 +342,11 @@ text-transform: uppercase;
 .table-content{
     margin: 10px 0;
     color: #324934;
+    
 }
 .table-header{
     color: #324934;
+    font-size: 18px;
 }
 .bag-button{
     border: 2px solid #324934;
@@ -354,12 +358,17 @@ text-transform: uppercase;
 }
 .product-name-bag{
     text-decoration: underline 1px #324934;
+    font-size: 17px;
 }
 .shopping-bag{
     color: #324934;
 }
 .img-fluid{
     max-width: 80%;
+}
+.free-delivery{
+    color: #90b06d;
+    font-size: 20px;
 }
 @media (min-width:768px){
     .table-container{

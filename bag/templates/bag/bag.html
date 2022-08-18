@@ -57,9 +57,9 @@
                             <hr class="w-50 mb-5">
                             <h6 class="mb-3"> Bag total: £{{ total|floatformat:2 }}</h6>
                             <h6 class="mb-3"> Delivery: £{{ delivery|floatformat:2 }}</h6>
-                            <h4 class="mb-4">Total: £{{ grand_total|floatformat:2 }}</h4>
+                            <h4 class="mb-4"> <strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
                             {% if free_delivery_delta > 0 %}
-                                <p class="mb-1 text-danger"> 
+                                <p class="mb-3 free-delivery"> 
                                     Spend £{{ free_delivery_delta }} to more to recieve free delivery!
                                 </p>
                             {% endif %}
