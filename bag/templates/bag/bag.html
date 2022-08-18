@@ -39,6 +39,7 @@
                         </td>
                         <td class="py-3">
                             <p class="table-content"> <strong>{{ item.product.name }}</strong></p>
+                            <p class="table-content">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %} N/A {% endif %}</p>
                         </td>
                         <td class="py-3">
                             <p class="table-content">£{{ item.product.price }}</p>
@@ -79,10 +80,13 @@
                 </table>
             </div>
             {% else %}
-            <p class="lead mb-5">Your bag is currently empty</p>
-            <a href="{% url 'products' %}" class="btn btn-outline-black rounded-2 btn-lg">
-                <span>Keep Shopping</span>
-            </a>
+            <div class="basket-empty">
+                <p class="mb-5">Your bag is currently empty</p>
+                <a href="{% url 'products' %}" class="btn bag-button rounded-2 btn-lg">
+                    <span>Keep Shopping</span>
+                </a>
+
+            </div>
             {% endif %}
         </div>
     </div>

@@ -271,6 +271,18 @@ text-transform: uppercase;
 .product-description{
     margin: 20px 0;
 }
+
+.atb-button{
+    border: 2px solid #324934;
+}
+.product-size{
+    border: 1px solid #dfced4;
+    padding: 6px;
+    border-radius: 4px;
+}
+.qty_input{
+    border: 1px solid #dfced4;
+}
 /* product details page end */
 
 /* Login & Logout */
@@ -315,12 +327,20 @@ text-transform: uppercase;
     text-align: center;
     margin: auto;
 }
-
+.basket-empty{
+    width: 80%;
+    margin: auto;
+    text-align: center;
+    justify-content: center;
+}
+.basket-empty p{
+    font-size: 20px;
+}
 .table-content{
     margin: 100px 0;
 }
 .bag-button{
-    border: 2px solid #324934;
+    border: 1px solid #324934;
     margin: 5px 20px;
 }
 .delivery-container{
