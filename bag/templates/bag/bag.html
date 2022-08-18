@@ -11,7 +11,7 @@
 {% endblock %}
 
 {% block content %}
-<div class="container mb-2">
+<div class="container mb-2 shopping-bag">
     <div class="row">
         <div class="col bag-title">
             <h2> Shopping Bag</h2>
@@ -24,7 +24,7 @@
             <div class="table-responsive table-container rounded">
                 <table class="table table-sm table-borderless">
                     <thead>
-                        <tr>
+                        <tr class="table-header">
                             <th scope="col"></th>
                             <th scope="col">Product Information</th>
                             <th scope="col">Price</th>
@@ -35,10 +35,10 @@
                     {% for item in bag_items %}
                     <tr>
                         <td class="p-3 w-25">
-                            <img class="img-fluid" src="{{ item.product.image.url }}" >
+                            <img class="img-fluid table-image" src="{{ item.product.image.url }}" >
                         </td>
                         <td class="py-3">
-                            <p class="table-content"> <strong>{{ item.product.name }}</strong></p>
+                            <p class="table-content product-name-bag"> <strong>{{ item.product.name }}</strong></p>
                             <p class="table-content">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %} N/A {% endif %}</p>
                         </td>
                         <td class="py-3">
@@ -55,8 +55,8 @@
                     <tr class="delivery-container">
                         <td colspan="5" class="pt-5">
                             <hr class="w-50 mb-5">
-                            <h6> Bag total: £{{ total|floatformat:2 }}</h6>
-                            <h6> Delivery: £{{ delivery|floatformat:2 }}</h6>
+                            <h6 class="mb-3"> Bag total: £{{ total|floatformat:2 }}</h6>
+                            <h6 class="mb-3"> Delivery: £{{ delivery|floatformat:2 }}</h6>
                             <h4 class="mb-4">Total: £{{ grand_total|floatformat:2 }}</h4>
                             {% if free_delivery_delta > 0 %}
                                 <p class="mb-1 text-danger"> 
@@ -85,7 +85,6 @@
                 <a href="{% url 'products' %}" class="btn bag-button rounded-2 btn-lg">
                     <span>Keep Shopping</span>
                 </a>
-
             </div>
             {% endif %}
         </div>

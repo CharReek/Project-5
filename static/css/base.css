@@ -322,13 +322,14 @@ text-transform: uppercase;
 }
 
 .table-container{
-    width: 80%;
+    width: 100%;
     justify-content: center;
     text-align: center;
     margin: auto;
+    color: #324934;
 }
 .basket-empty{
-    width: 80%;
+    width: 100%;
     margin: auto;
     text-align: center;
     justify-content: center;
@@ -337,15 +338,33 @@ text-transform: uppercase;
     font-size: 20px;
 }
 .table-content{
-    margin: 100px 0;
+    margin: 10px 0;
+    color: #324934;
+}
+.table-header{
+    color: #324934;
 }
 .bag-button{
-    border: 1px solid #324934;
+    border: 2px solid #324934;
     margin: 5px 20px;
 }
 .delivery-container{
     justify-content: center;
     text-align: center;
+}
+.product-name-bag{
+    text-decoration: underline 1px #324934;
+}
+.shopping-bag{
+    color: #324934;
+}
+.img-fluid{
+    max-width: 80%;
+}
+@media (min-width:768px){
+    .table-container{
+        width: 80%;
+    }
 }
 /* Shopping bag End*/
 
