@@ -240,7 +240,9 @@ text-transform: uppercase;
     background-color: #90b06d;
 }
 
-.btt-link {
+.btt-link,
+.update-link,
+.remove-link {
     cursor: pointer;
 }
 
