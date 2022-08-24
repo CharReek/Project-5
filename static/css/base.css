@@ -102,8 +102,6 @@ color: white;
     z-index: -1;
 }
 
-/* header section end */
-
 .text-section{
     justify-content: center;
     text-align: center;
@@ -120,6 +118,25 @@ color: white;
 .text-section i {
     padding-bottom: 25px;
 }
+/* header section end */
+
+/* toast section */
+.message-container{
+    position: fixed;
+    top: 72px;
+    right: 15px;
+    z-index: 999;
+}
+.custom-toast{
+    overflow: visible;
+}
+.toast-capper{
+    height: 12px;
+}
+.close{
+    margin-left:85px;
+}
+/* toast section end */
 
 /* icons */
 .icon {
@@ -242,8 +259,15 @@ text-transform: uppercase;
 
 .btt-link,
 .update-link,
-.remove-link {
+.remove-item {
     cursor: pointer;
+}
+.update-link{
+    padding-right: 10px;
+}
+.decrement-qty,
+.increment-qty{
+    padding: 5px;
 }
 
 .badge {
@@ -331,6 +355,7 @@ text-transform: uppercase;
     justify-content: center;
     margin: auto;
     color: #324934;
+    text-align: center;
 }
 .basket-empty{
     width: 100%;
@@ -372,10 +397,28 @@ text-transform: uppercase;
     color: #90b06d;
     font-size: 20px;
 }
+.fa-plus,
+.fa-minus{
+    color: white;
+}
+.increment-qty,
+.decrement-qty{
+    background-color: #324934;
+}
+.update-delete{
+    margin: auto;
+    width: 80%;
+}
+.input-group-bag{
+    width: 70%;
+    margin: auto;
+}
+
 @media (min-width:768px){
     .table-container{
         width: 80%;
     }
+
 }
 /* Shopping bag End*/
 
@@ -386,6 +429,12 @@ text-transform: uppercase;
   .container {
     max-width: 100%;
   }
+
+}
+@media (min-width:991px){
+    .toast-capper{
+        height: 60px;
+    }
 }
 
 /* fixed top navbar only on medium and up */

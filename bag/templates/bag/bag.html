@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block page_header %}
 <div class="container header-container">
@@ -34,25 +35,25 @@
                     </thead>
                     {% for item in bag_items %}
                     <tr>
-                        <td class="p-3 w-25">
+                        <td class="p-4 w-25">
                             <img class="img-fluid table-image" src="{{ item.product.image.url }}" >
                         </td>
-                        <td class="py-3">
+                        <td class="py-4 w-25">
                             <p class="table-content product-name-bag"> <strong>{{ item.product.name }}</strong></p>
-                            <p class="table-content">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %} N/A {% endif %}</p>
+                            <p class="table-content">Size:{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                         </td>
-                        <td class="py-3">
+                        <td class="py-4">
                             <p class="table-content">£{{ item.product.price }}</p>
                         </td>
-                        <td class="py-3">
+                        <td class="py-4 w-25">
                             <form action="{% url 'update_bag' item.item_id %}" class="form update-form" method="POST">
                                 {% csrf_token %}
                                 <div class="form-group">
-                                    <div class="input-group">
+                                    <div class="input-group input-group-bag">
                                         <div class="input-group-prepend">
                                             <button class="decrement-qty btn rounded-2" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                                                 <span class="icon">
-                                                    <i class="fas fa-minus"></i>
+                                                    <i class="fa-solid fa-minus"></i>
                                                 </span>
                                             </button>
                                         </div>
@@ -62,7 +63,7 @@
                                         <div class="input-group-append">
                                             <button class="increment-qty btn rounded-2" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                                                 <span class="icon">
-                                                    <i class="fas fa-plus"></i>
+                                                    <i class="fa-solid fa-plus"></i>
                                                 </span>
                                             </button>
                                         </div>
@@ -75,8 +76,8 @@
                             <a class="update-link"><small>Update</small></a>
                             <a class="remove-item" id="remove_{{ item.item_id}}" data-product_size="{{ item.size }}"><small>Delete</small></a>
                         </td>
-                        <td class="py-3">
-                            <p class="table-content">£{{ item.product.price }}</p>
+                        <td class="py-4">
+                            <p class="table-content">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
                         </td>
                     </tr>
                     {% endfor %}
@@ -132,16 +133,16 @@ $('.update-link').click(function(e) {
 })
 
 //delete item from basket
-$('remove-item').click(function(e) {
-    var csrfToken = "{{csrf_token }}";
+$('.remove-item').click(function(e) {
+    var csrfToken = "{{ csrf_token }}";
     var itemId = $(this).attr('id').split('remove_')[1];
     var size = $(this).data('product_size');
     var url = `/bag/remove/${itemId}/`;
-    var data = {'csrfmiddlewaretoken': csrfToken, 'product_size':size};
+    var data = {'csrfmiddlewaretoken': csrfToken, 'product_size': size};
 
     $.post(url, data)
-    .done(function() {
-        location.reload();
+        .done(function() {
+            location.reload();
     });
 })
 </script>
