@@ -40,7 +40,7 @@
                         </td>
                         <td class="py-4 w-25">
                             <p class="table-content product-name-bag"> <strong>{{ item.product.name }}</strong></p>
-                            <p class="table-content">Size:{% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                            <p class="table-content">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
                         </td>
                         <td class="py-4">
                             <p class="table-content">£{{ item.product.price }}</p>
@@ -89,7 +89,7 @@
                             <h4 class="mb-4"> <strong>Total: £{{ grand_total|floatformat:2 }}</strong></h4>
                             {% if free_delivery_delta > 0 %}
                                 <p class="mb-3 free-delivery"> 
-                                    Spend £{{ free_delivery_delta }} to more to recieve free delivery!
+                                    Spend £{{ free_delivery_delta }} more to recieve free delivery!
                                 </p>
                             {% endif %}
                         </td>

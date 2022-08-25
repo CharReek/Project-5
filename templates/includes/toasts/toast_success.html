@@ -25,7 +25,7 @@
                     <div class="col-9">
                         <p class="my-0"><strong>{{ item.product.name }}</strong></p>
                         <p class="my-0 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
-                        <p class="my-0 small text-muted">Quantity: {{ item.quantity }}</p>
+                        <p class="my-0 small">Quantity: {{ item.quantity }}</p>
                     </div>
                 </div>
             {% endfor %}
@@ -33,16 +33,16 @@
         <div class="row">
             <div class="col">
                 <strong><p class="mt-3 mb-1">
-                    Total{% if free_delivery_delta > 0  %} (Exc. delivery){% endif %}
+                    Total{% if free_delivery_delta > 0  %} (Excluding delivery){% endif %}
                     <span class="float-right">£{{ total|floatformat:2 }}</span>
                 </p></strong>
                 {% if free_delivery_delta > 0 %}
                     <p class="mb-0 p-2 text-center">
-                        Spend <Strong>£{{ free_delivery_delta }} </Strong> more to get free delivery
+                        Spend <Strong>£{{ free_delivery_delta }} </Strong>more to recieve free delivery!
                     </p>
                 {% endif %}
-                <a href="{% url 'view_bag' %}" class="btn btn-black rounded-2">
-                    <span> Go to checkout</span>
+                <a href="{% url 'view_bag' %}" class="btn btn-black rounded-2 checkout-btn">
+                    <span> <strong>Go to checkout</strong></span>
                 </a>
             </div>
         </div>

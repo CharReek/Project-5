@@ -38,8 +38,14 @@ a:hover{
 .navbar-toggler {
     border: 1px solid white;
 }
-.navbar-toggler-icon{
-    color: #dfced4;
+.navbar{
+
+}
+
+@media (min-width:992px;){
+    .nav-link{
+        margin: 0;
+    }
 }
 /* nav end */
 
@@ -138,12 +144,23 @@ color: white;
 }
 
 .bag-notification{
-    height: 100px;
+    height: 150px;
     overflow-x: hidden;
     overflow-y: auto;
 }
 
-
+.checkout-btn{
+    width: 100%;
+    text-align: center;
+    background-color: #90b06d;
+}
+.toast-header{
+    display: block;
+    color: #324934;
+}
+.toast-body{
+    color: #324934;
+}
 /* toast section end */
 
 /* icons */
