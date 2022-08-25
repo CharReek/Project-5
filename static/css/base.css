@@ -136,6 +136,14 @@ color: white;
 .close{
     margin-left:85px;
 }
+
+.bag-notification{
+    height: 100px;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+
 /* toast section end */
 
 /* icons */
