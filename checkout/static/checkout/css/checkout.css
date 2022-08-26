@@ -27,3 +27,23 @@
     border: solid 2px #324934;
     margin: 10px;
 }
+
+/* stripe payment  */
+.StripeElement,
+.stripe-style-input {
+  box-sizing: border-box;
+  border: 1px solid #324934;
+  height: 45px;
+  padding: 10px 15px;
+  -webkit-transition: box-shadow 150ms ease;
+  transition: box-shadow 150ms ease;
+}
+
+.StripeElement--webkit-autofill {
+  background-color: #fefde5 !important;
+}
+
+.stripe-style-input::placeholder {
+    color: #aab7c4;
+}
+/* stripe payment end */
