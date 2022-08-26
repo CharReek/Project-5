@@ -64,27 +64,40 @@
     /* product details page */
     .product-text{
         font-size: 30px;
-        margin: auto;
-        padding-bottom: 25px;
     }
     
     .product-price-pd{
         font-size: 25px;
-        margin: auto;
-        padding-bottom: 25px;
     }
-    
     .product-description{
         margin: 20px 0;
     }
-    
+
     .atb-button{
-        border: 2px solid #324934;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        margin: auto;
+        justify-content: center;
+        height: 40px;
+        display: flex;
+        border: 1px solid #324934;
+        margin: 20px;
+        transition: 300ms ease-out;
+        background-color: #324934;
+        color: white;
+    }
+    
+    .atb-button:hover {
+     background-color:#dfced4;
+     border: 1px solid #dfced4;
+     color: #324934;
     }
     .product-size{
         border: 1px solid #324934;
         padding: 6px;
         border-radius: 4px;
+        width: 80%;
     }
     .qty_input{
         border: 1px solid #324934;
@@ -103,4 +116,10 @@
     margin: auto;
 }
 
+.quantity-size{
+    display: flex;
+}
+.form-group{ 
+    width: 80%;
+}
     /* product details page end */
