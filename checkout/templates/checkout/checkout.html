@@ -1,5 +1,6 @@
 {% extends "base.html" %}
 {% load static %}
+{% load bag_tools %}
 
 {% block extra_css %}
 <link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
@@ -18,13 +19,104 @@
 <div class="container">
     <div class="row">
         <div class="col checkout-title">
-            <h2> Check out</h2>
+            <h2> Check Out</h2>
             <hr class="w-50 mb-5">
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 cold-lg-6">
+        <div class="row">
+            <div class="col-12 col-lg-6 order-lg-last mb-5 order-summary">
+                <p> Order Summary({{ product_count }}) </p>
+                <div class="row">
+                    <div class="col-6">
+                        <p class="mb-2 mt-0 order-summary-header">Item</p>
+                    </div>
+                    <div class="col-4">
+                        <p class="mb-2 mt-0 order-summary-header">Subtotal</p>
+                    </div>
+                </div>
+                {% for item in bag_items %}
+                    <div class="row">
+                        <div class="col-6 mb-2">
+                            <a href="{% url 'product_detail' item.product.id %}">
+                                {% if item.product.image %}
+                                    <img class="w-50" src="{{ item.product.image.url }}" alt="{{ product.name }}">
+                                {% else %}
+                                    <img class="w-50" src="{{ MEDIA_URL }}noimage.png" alt="{{ product.name }}">
+                                {% endif %}
+                            </a>
+                        </div>
+                        <div class="col-3">
+                            <p class="mb-1"><strong>{{ item.product.name }}</strong></p>
+                            <p class="mb-1 small">Size: {% if item.product.has_sizes %}{{ item.size|upper }}{% else %}N/A{% endif %}</p>
+                            <p class="mb-1 small">Qty: {{ item.quantity }}</p>
+                        </div>
+                        <div class="col-3">
+                            <p class="my-0 small">£{{ item.product.price | calc_subtotal:item.quantity }}</p>
+                        </div>
+                    </div>
+                {% endfor %}
+                <hr class="my-0">
+                <div class="row text-black">
+                    <div class="col-6 offset-2 text-center">
+                        <p class="my-2">Order Total:</p>
+                        <p class="my-2">Delivery:</p>
+                        <p class="my-2">Grand Total:</p>
+                    </div>
+                    <div class="col-3 text-center">
+                        <p class="my-2">£{{ total | floatformat:2 }}</p>
+                        <p class="my-2">£{{ delivery | floatformat:2 }}</p>
+                        <p class="my-2"><strong>£{{ grand_total | floatformat:2 }}</strong></p>
+                    </div>
+                </div>
+                <hr>
+            </div>
+        <div class="col-12 col-lg-6 text-center">
             <p>To complete your order, please fill out the form below:</p>
+            <form action="{% url 'checkout' %}" method="POST" id="payment_form">
+                {% csrf_token %}
+                <fieldset class="rounded-2 px-3 mb-2">
+                    <legend class="fieldset_label px2 w-auto"> Details</legend>
+                    {{ order_form.full_name | as_crispy_field }}
+                    {{ order_form.email | as_crispy_field }}
+                </fieldset>
+                <fieldset class="rounded-2 px-3 mb-2">
+                    <legend class="fieldset_label px2 w-auto"> Delivery Details</legend>
+                    {{ order_form.phone_number | as_crispy_field }}
+                    {{ order_form.street_address_1 | as_crispy_field }}
+                    {{ order_form.street_address_1 | as_crispy_field }}
+                    {{ order_form.town_or_city | as_crispy_field }}
+                    {{ order_form.county | as_crispy_field }}
+                    {{ order_form.country | as_crispy_field }}
+                    {{ order_form.postcode | as_crispy_field }}
+                    <div class="form-check form-check-inline mr-0">
+                        {% if user.is_authenticated %}
+                            <label class="form-check-label" for="id-save-info">Save this delivery information to my profile</label>
+                            <input class="form-check-input ml-2 mr-0" type="checkbox" name="save-info" checked>
+                        {% else %}
+                            <label class="form-check-label" for="id-save-info">
+                                <a class="text-info" href="{% url 'account-signup' %}">Create an Account</a>
+                                <a class="text-info" href="{% url 'account-login' %}">Login</a>
+                            </label>
+                        {% endif %}
+                    </div>
+                </fieldset>
+                <fieldset class="px-3">
+                    <legend class="fieldset_label px2 w-auto"> Payment</legend>
+                    <div class="mb-3" id="card-element"></div>
+                    <div class="mb-3 text-danger" id="card-error" role="alert"></div>
+                </fieldset>
+                <div class="checkout-button-box">
+                    <a href="{% url 'view_bag' %}" class="btn rounded-2 checkout-button">
+                        <span> Back To bag</span>
+                    </a>
+                    <button id="checkout-button" class="btn rounded-2 checkout-button">
+                        <span>Complete order</span>
+                    </button>
+                    <p class="small text-danger">
+                        <span> Your card will be charged with the following amount: <strong>£{{ grand_total|floatformat:2 }}</strong></span>
+                    </p>
+                </div>
+            </form>
         </div>
     </div>
 </div>

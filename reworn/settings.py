@@ -46,9 +46,7 @@ INSTALLED_APPS = [
     'products',
     'bag',
     'checkout',
-    
-    # other
-    'cripsy_forms' 
+    'crispy_forms',
     
 ]
 
@@ -80,12 +78,13 @@ TEMPLATES = [
                 'django.template.context_processors.request',
                 'django.contrib.auth.context_processors.auth',
                 'django.contrib.messages.context_processors.messages',
+                'django.template.context_processors.media',
                 'bag.contexts.bag_contents',
             ],
-            'builtins':{
-                'cripsy_forms.templatetags.crispy_forms_tags'
-                'crispy_forms.templatetags.crispy_forms_field'
-            }
+            'builtins': [
+                'crispy_forms.templatetags.crispy_forms_tags',
+                'crispy_forms.templatetags.crispy_forms_field',
+            ]
         },
     },
 ]

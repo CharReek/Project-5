@@ -1,0 +1,29 @@
+.order-summary{
+    text-align: left;
+    color: #324934;
+}
+.order-summary-header{
+    text-decoration: underline;
+}
+
+.checkout-title{
+    text-align: center;
+    color: #324934;
+}
+.container{
+    color: #324934;
+}
+
+.form-control{
+    width: 80%;
+    display: inline-flex;
+}
+
+.checkout-button{
+    background-color: #324934;
+    color: #fff;
+    padding: 10px;
+    font-size: 20px;
+    border: solid 2px #324934;
+    margin: 10px;
+}
