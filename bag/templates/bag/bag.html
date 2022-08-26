@@ -1,5 +1,10 @@
 {% extends "base.html" %}
 {% load static %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'bag/css/bag.css' %}">
+{% endblock %}
+
 {% load bag_tools %}
 
 {% block page_header %}
@@ -67,7 +72,7 @@
                                                 </span>
                                             </button>
                                         </div>
-                                        {% if item.product.has_size %}
+                                        {% if item.product.has_sizes %}
                                         <input type="hidden" name="product_size" value="{{ item.size }}">
                                         {% endif %}
                                     </div>
