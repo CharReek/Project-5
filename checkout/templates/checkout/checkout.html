@@ -83,7 +83,7 @@
                     <legend class="fieldset_label px2 w-auto"> Delivery Details</legend>
                     {{ order_form.phone_number | as_crispy_field }}
                     {{ order_form.street_address_1 | as_crispy_field }}
-                    {{ order_form.street_address_1 | as_crispy_field }}
+                    {{ order_form.street_address_2 | as_crispy_field }}
                     {{ order_form.town_or_city | as_crispy_field }}
                     {{ order_form.county | as_crispy_field }}
                     {{ order_form.country | as_crispy_field }}
@@ -103,7 +103,7 @@
                 <fieldset class="px-3">
                     <legend class="fieldset_label px2 w-auto"> Payment</legend>
                     <div class="mb-3" id="card-element"></div>
-                    <div class="mb-3 text-danger" id="card-error" role="alert"></div>
+                    <div class="mb-3 text-danger" id="card-errors" role="alert"></div>
                 </fieldset>
                 <div class="checkout-button-box">
                     <a href="{% url 'view_bag' %}" class="btn rounded-2 checkout-button">
