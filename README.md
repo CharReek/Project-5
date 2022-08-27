@@ -4,6 +4,8 @@ Reworn - logo done
 
 Font - Quicksand
 https://unsplash.com/s/photos/clothing
+dress image - Karen Willis Holmes - https://unsplash.com/s/photos/clothing
+top - Alex Haigh
 
 seo - keywords
 wordtracker.com -see how many time a key word is searched for 

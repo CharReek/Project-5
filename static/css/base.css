@@ -235,21 +235,25 @@ color: white;
 
 .top-box{
     height: 20px;
-    width: 226px;
-    background-color: purple;
+    width: 250px;
+    background-color: blue;
     top: 50%;
     left: 50%;
-    transform: translate(-113px, -193px);
+    transform: translate(-124px, -204px);
     position: absolute;
 }
 .bottom-box{
     height: 20px;
-    width: 226px;
-    background-color: red;
+    width: 250px;
+    background-color: lightpink;
     bottom: 50%;
     right: 50%;
-    transform: translate(113px, 193px);
+    transform: translate(124px, 204px);
     position: absolute;
+}
+.new-in-image img{
+    height: 250px;
+    width: 250px;
 }
 /* New in section end  */
 

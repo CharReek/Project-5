@@ -20,14 +20,21 @@
     <div class="row">
         <div class="col checkout-title">
             <h2> Thank you for your order</h2>
-            <hr class="w-50 mb-5">
-            <p> Your order information can be found below. A order conformation email will be sent to {{ order.email }}. </p>
+            <hr class="w-50 mb-4 divider">
+            <p class="confirmation-text"> A order confirmation email will be sent to {{ order.email }}.</p>
+            
         </div>
     </div>
-    <div class="row">
-        <div class="col-12 col-lg-7">
-
+    <div class="row promo-row">
+        <hr class="w-50 mt-5 divider">
+        <h2 class="blog-header"> Want to keep up to date with the world of fashion? </h2>
+        <p> Follow along with us on our blog </p>
+        <div class="blog-btn-container">
+            <a href="https://project4-blog-creek.herokuapp.com/" target="_blank" class="btn blog-button rounded-2 btn-lg">
+                <span>Take me to the blog!</span>
+            </a>
         </div>
+        <p>Want to show off what your brought? Tag us on our instagram @reworn_fashion</p>
     </div>
 </div>
 {% endblock %}

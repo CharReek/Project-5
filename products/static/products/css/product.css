@@ -13,6 +13,9 @@
         justify-content: center;
         text-align: center;
     }
+    .card-img-top-pp {
+        height: 500px;
+    }
     
     .card-body{
         padding: 0.75rem;

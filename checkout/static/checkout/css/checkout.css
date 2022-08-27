@@ -27,7 +27,28 @@
     border: solid 2px #324934;
     margin: 10px;
 }
+.promo-row{
+    text-align: center;
+    display: block;
+}
+.blog-button{
+    border: 2px solid #324934;
+    margin: 5px 20px;
+}
+.blog-header{
+    margin: 60px;
+}
 
+.blog-header p {
+    margin-bottom: 30px;
+}
+.blog-btn-container{
+    margin: 50px;
+}
+.confirmation-text{
+    margin-top: 50px;
+    font-size: 20px;
+}
 /* stripe payment  */
 .StripeElement,
 .stripe-style-input {

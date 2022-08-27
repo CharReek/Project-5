@@ -98,14 +98,15 @@ class StripeWH_Handler:
             except Exception as e:
                 if order:
                     order.delete()
-                return HttpResponse(content=f'Webhook received: {event["type"]} | Error: {e}',
+                return HttpResponse(
+                    content=f'Webhook received: {event["type"]} | Error: {e}',
                                     status=500)
         return HttpResponse(
-                content=f'Webhook received: {event["type"]}',
+                content=f'Webhook received: {event["type"]} | Success: order created in webhook',
                 status=200)
 
     def handle_payment_intent_payment_failed(self, event):
         """ handle payment_intent_failed webhook """
         return HttpResponse(
-            content=f'Webhook received: {event["type"]} | Success: order created in webhook',
+            content=f'Webhook received: {event["type"]}',
             status=200)
