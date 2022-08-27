@@ -37,6 +37,8 @@
   padding: 10px 15px;
   -webkit-transition: box-shadow 150ms ease;
   transition: box-shadow 150ms ease;
+  width: 80%;
+  margin: auto;
 }
 
 .StripeElement--webkit-autofill {
