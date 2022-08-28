@@ -1,0 +1,7 @@
+hello {{order.full_name}}, 
+
+Thanbk you for your order, Please see the details of your order below:
+
+Order Number {{ order.order_number }}
+
+Thanks Reworn 
