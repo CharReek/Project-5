@@ -14,7 +14,7 @@ a:hover{
     color: #90b06d;
 }
 .header-container{
-    padding-top: 80px;
+    padding-top: 74px;
 }
 .header-container-pp{
     padding-top: 200px;
@@ -71,52 +71,33 @@ color: white;
 
 /* Header section */
 .header-section{
-    height: 550px;
+    height: 250px;
     text-align: center;
     justify-content: center;
     width: 100%;
     overflow: hidden;
     max-width: 1930px;
     padding: 0;
-   display: block;
+    display: block;
 }
 
-.header-text{
-    left: 25%;
-    top: 45%;
-    transform: translate(-50%, -50%);
+.header-image{
+    width: 100%;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+
+.header-text {
+    transform: translate(4%, 17%);
     z-index: 1;
     position: absolute;
     color: white;
-}
-.shop-now-button{
-    width: 100%;
-    display: flex;
-    align-items: center;
-    margin: auto;
     justify-content: center;
+    margin: auto;
 }
 
-.shop-now-button a {
-    height: 40px;
-    width: 200px;
-    display: flex;
-    border: 1px solid black;
-    margin: 20px;
-    transition: 300ms ease-out;
-    background-color: bisque;
-}
-
-.shop-now-button a:hover {
- background-color: aqua;
- border: 1px solid pink;
-}
-.header-image{
-    height: auto;
-    width: 100%;
-    background-position: center;
-    z-index: -1;
-}
 
 .text-section{
     justify-content: center;
@@ -213,20 +194,6 @@ color: white;
     color: #324934;
 }
 
-.new-in-text a{
-    color: #324934;
-    height: 60px;
-    width: 200px;
-    border: 1px solid #90b06d;
-    margin: auto;
-    padding: 20px 25px;
-    justify-content: center;
-    transition: 300ms ease-out;
-    background-color: #90b06d;
-    font-weight: 400;
-    text-transform: uppercase;
-}
-
 .new-in-title{
     padding-bottom: 70px;
 }
@@ -258,6 +225,21 @@ color: white;
     height: 250px;
     width: 250px;
 }
+.new-in-btn{
+    background-color: #324934;
+    color: #fff;
+    border-radius: 15px;
+    padding: 10px 60px;
+    font-size: 20px;
+    border: solid 2px #324934;
+    margin: 30px;
+}
+.new-in-btn:hover{
+    background-color: #fff;
+    color: #324934;
+    border: solid 2px #324934;
+}
+
 /* New in section end  */
 
 /* Login & Logout */
@@ -277,13 +259,18 @@ color: white;
     text-decoration: underline 1px solid;
 }
 .submit-button{
-    background-color: #dfced4;
-    color: #324934;
+    background-color: #324934;
+    color: #fff;
     border-radius: 15px;
     padding: 10px 60px;
     font-size: 20px;
     border: solid 2px #324934;
     margin: 30px;
+}
+.submit-button:hover{
+    background-color: #fff;
+    color: #324934;
+    border: solid 2px #324934;
 }
 
 /* Login & Logout End */
@@ -306,6 +293,16 @@ color: white;
         height: 60px;
     }
 }
+@media (min-width:517px){
+    .header-text {
+        transform: translate(0%, 80%);
+        z-index: 1;
+        position: absolute;
+        color: white;
+        justify-content: center;
+        margin: auto;
+    }
+}
 
 /* fixed top navbar only on medium and up */
 @media (min-width: 992px) {
@@ -318,7 +315,7 @@ color: white;
     }
 
     .header-container {
-        padding-top: 128px;
+        padding-top: 132px;
     }
     
     

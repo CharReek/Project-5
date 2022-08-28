@@ -1,7 +1,16 @@
-hello {{order.full_name}}, 
+Hello {{ order.full_name }}, 
 
-Thanbk you for your order, Please see the details of your order below:
+Thank you for your order, Please see the details of your order below:
 
-Order Number {{ order.order_number }}
+Order Number: {{ order.order_number }}
+Order Date: {{ order.date }}
+Order Total: {{ order.order_total }}
+Delivery Total: £{{ order.deilvery_cost }}
+Grand Total: £{{ order.grand_total }}
 
-Thanks Reworn 
+Your order will be with you with in 5-7 business day. 
+
+If you have any questions do not hesitate to contact us. 
+
+Thanks 
+Reworn 

@@ -60,7 +60,7 @@
                                 <div class="form-group">
                                     <div class="input-group input-group-bag">
                                         <div class="input-group-prepend">
-                                            <button class="decrement-qty btn rounded-2" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
+                                            <button class="decrement-qty btn" data-item_id="{{ item.item_id }}" id="decrement-qty_{{ item.item_id }}">
                                                 <span class="icon">
                                                     <i class="fa-solid fa-minus"></i>
                                                 </span>
@@ -70,7 +70,7 @@
                                             min="1" max="99" data-item_id="{{ item.item_id }}" id="id_qty_{{ item.item_id }}">
                                             
                                         <div class="input-group-append">
-                                            <button class="increment-qty btn rounded-2" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
+                                            <button class="increment-qty btn" data-item_id="{{ item.item_id }}" id="increment-qty_{{ item.item_id }}">
                                                 <span class="icon">
                                                     <i class="fa-solid fa-plus"></i>
                                                 </span>
@@ -105,12 +105,12 @@
                     </tr>
                     <tr>
                         <td colspan="5" class="delivery-container">
-                            <a href="{% url 'products' %}" class="btn bag-button rounded-2 btn-lg">
+                            <a href="{% url 'products' %}" class="bag-button rounded-2 btn-lg">
                                 <span>
                                     Keep Shopping
                                 </span>
                             </a>
-                            <a href="{% url 'checkout' %}" class="btn bag-button rounded-2 btn-lg">
+                            <a href="{% url 'checkout' %}" class="bag-button rounded-2 btn-lg">
                                 <span> Secure Checkout</span>
                             </a>
                         </td>
@@ -120,7 +120,7 @@
             {% else %}
             <div class="basket-empty">
                 <p class="mb-5">Your bag is currently empty</p>
-                <a href="{% url 'products' %}" class="btn bag-button rounded-2 btn-lg">
+                <a href="{% url 'products' %}" class="bag-button rounded-2 btn-lg">
                     <span>Keep Shopping</span>
                 </a>
             </div>

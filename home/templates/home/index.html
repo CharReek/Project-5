@@ -11,17 +11,15 @@
 {% endblock %}
 
 {% block content %}
-<!-- <div class="container header-section">
-    <img class="img-responsive header-image"src="/media/header-image2.jpg" alt="prada bag">
-    <div class="col-12 header-text">
-        <h1>
-           Shop Recycled Fashion
-        </h1>
-        <div class="shop-now-button">
-            <a href="{% url 'products' %}?category=dresses" class="shop-now-button btn btn-lg rounded-0 text-uppercase py-3">Shop Now</a>
-        </div>
+<div class="container header-section">
+    <div class="row">
+        <img class="img-responsive header-image"src="/media/tobias-tullius-RhjVGxILcqE-unsplash1.jpg" alt="Forrest">
+            <div class="col-12 header-text">
+                <h1>Reworn</h1>
+                <h3> Helping the planet one item at a time!</h3>
+            </div>
     </div>
-</div> -->
+</div>
 <div class="row text-section">
     <div class="col-12 title">
         <h1>Benefits of Sustainable fashion</h1>
@@ -83,7 +81,7 @@
             <h2 class="new-in-title">
                 NEW ARRIVALS
             </h2>
-            <a href="#"> <strong> Shop Now </strong></a>
+            <a href="{% url 'products' %}?category=dresses,tops,bottoms,jackets,coats" class="rounded-2 new-in-btn"> <strong> Shop Now </strong></a>
         </div>
         <div class="col-lg-4 col-sm-12 ">
             <div class="new-in-product new-in-product-2">
