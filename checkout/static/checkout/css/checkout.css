@@ -70,3 +70,13 @@
     color: #aab7c4;
 }
 /* stripe payment end */
+
+.order-confirmation-wrapper{
+    text-align: left;
+    justify-content: center;
+    margin: auto;
+}
+.order-conf{
+    justify-content: center;
+    margin: auto;
+}
