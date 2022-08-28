@@ -7,6 +7,9 @@ body {
 .product-row{
     min-width: 100%;
 }
+a{
+    color: #324934;
+}
 a:hover{
     color: #90b06d;
 }

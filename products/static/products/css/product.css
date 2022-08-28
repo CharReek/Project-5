@@ -64,7 +64,7 @@
     }
     /* product page end */
     
-    /* product details page */
+/* product details page */
     .product-text{
         font-size: 30px;
     }
@@ -106,26 +106,30 @@
         border: 1px solid #324934;
     }
     .fa-plus,
-.fa-minus{
-    color: white;
-}
+    .fa-minus{
+        color: white;
+    }
 
-.increment-qty,
-.decrement-qty{
-    background-color: #324934;
-}
+    .increment-qty,
+    .decrement-qty{
+        background-color: #324934;
+    }
 
-.input-group-bag{
-    width: 70%;
-    margin: auto;
-}
+    .input-group-bag{
+        width: 70%;
+        margin: auto;
+    }
 
-.quantity-size{
-    display: flex;
-}
-.form-group{ 
-    width: 80%;
-}
+    .quantity-size{
+        display: flex;
+    }
+    .form-group{ 
+        width: 80%;
+    }
+
+    .edit-delete{
+        margin: 10px;
+    }
 /* product details page end */
 
 /* product management */

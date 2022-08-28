@@ -108,10 +108,12 @@
                         {% endwith %}
                     </div>
                 </form>
-                {% if request.user.is_superuser %}
-                    <a href="{% url 'edit_product' product.id %}">Edit Product</a>
-                    <a href="{% url 'delete_product' product.id %}" class="text-danger">Delete Product</a>
-                {% endif %}
+                <div class="edit-delete" >
+                    {% if request.user.is_superuser %}
+                        <a href="{% url 'edit_product' product.id %}" class="float-left">Edit Product</a>
+                        <a href="{% url 'delete_product' product.id %}" class="text-danger float-right">Delete Product</a>
+                    {% endif %}
+                </div>
             </div>
         </div>
     </div>
