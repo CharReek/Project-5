@@ -109,6 +109,7 @@
 .fa-minus{
     color: white;
 }
+
 .increment-qty,
 .decrement-qty{
     background-color: #324934;
@@ -125,4 +126,29 @@
 .form-group{ 
     width: 80%;
 }
-    /* product details page end */
+/* product details page end */
+
+/* product management */
+.product-m-title{
+    text-align: center;
+}
+.form-field{
+    justify-content: center;
+    margin: auto;
+}
+
+.pm-buttons{
+    justify-content: center;
+    height: 40px;
+    width:37%;
+    border: 1px solid #324934;
+    margin: 20px;
+    transition: 300ms ease-out;
+    background-color: #324934;
+    color: white;
+}
+.pm-buttons:hover{
+    background-color: #fff;
+    color: #324934;
+    border: 1px solid #324934;
+}
