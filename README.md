@@ -83,6 +83,13 @@ Due to a trend in substainable fashion i decided to create an instagram page for
 
 ## Code Validation
 ### HTML Validation
+Homepage 
+Product Page 
+Product Detail Page
+Shopping Bag 
+Checkout 
+Accounts
+Profile 
 ### Css Validation
 ### Python validation 
 
