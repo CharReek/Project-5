@@ -56,8 +56,8 @@ I made sure i incliuded these words in the correct contect across the site.
 I also made sure all images have alt tags. 
 The site has a sitemap and a tobots.txt file 
 
-## web marketing
-Due to a trend in substainable fashion i decided to create an instagram page for Reworn. This was due to instagram being where the target audience in. The younger generation are becoming more and more concerned with fast fashion. The use of being able to tag a stor will help get the word about the store out there. [instagram]()
+## Web marketing
+Due to a trend in substainable fashion i decided to create mock up instagram and facebook ads for Reworn. This was due to instagram being where the target audience in. The younger generation are becoming more and more concerned with fast fashion. The use of being able to tag a stor will help get the word about the store out there. These ads will come up on the relevant peoples pages so they will be going direct to the target audience. These mock ups can be found in the media folder under Ad mockups 
 
 
 ## Technologies Used 
