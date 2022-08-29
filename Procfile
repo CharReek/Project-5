@@ -1,0 +1,1 @@
+web: gunicorn reworn.wsgi:application
