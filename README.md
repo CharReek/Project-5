@@ -8,7 +8,14 @@ Users can also log into their account and view previous orders and change the sa
 The purpose of this website is to stop more and more clothing ending up in landfills as this is an huge issue in todays society.The website provies a space where shoppers can find Substinably sources clothing that dosent hurt the enviroment.Users then can then make a purchase.
 
 ## Wireframes
+All wireframs can be found in the media folder under Wireframes. 
+
+I wanted my website to be clean and to the point as personally i hate when a webstire is cluttered. It makes things hard to find and gives the users a poor experience. This is somethign i kept in my mind though out the duration of the website design. 
+
 ## Userstories
+All my user storeies can be found in the project board - [https://github.com/CharReek/Project-5/projects](https://github.com/CharReek/Project-5/projects)
+
+I used these as a basis for my project to ensure that the website was catering to both the user and the store owner. 
 
 ## Exsisting Features
 * ### Nav Bar & Drop down menu 
@@ -38,7 +45,20 @@ There are mutiple features i would look to add in the future in order to provie 
 4. I would like to add a subscription section where customer can subscribe and get clothing delivered to them on a monthly basis. 
 
 ## Search engine Optimization
+I implemented SEO techniques by researching key words. I found that the top 5 words were:
+1. Substainable 
+2. Eco-frienly
+3. Fashion
+4. Dresses
+5. Eco 
+I made sure i incliuded these words in the correct contect across the site.
+
+I also made sure all images have alt tags. 
+The site has a sitemap and a tobots.txt file 
+
 ## web marketing
+Due to a trend in substainable fashion i decided to create an instagram page for Reworn. This was due to instagram being where the target audience in. The younger generation are becoming more and more concerned with fast fashion. The use of being able to tag a stor will help get the word about the store out there. 
+
 
 ## Technologies Used 
 ### Languages used 
@@ -196,19 +216,19 @@ Webhooks
 * install django-storages
 * freeze requirements.txt
 * add the below to storage and installed apps 
-` 
-if 'USE_AWS' in os.environ:
-    # Cache control
+`if 'USE_AWS' in os.environ:'
+    '# Cache control
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
-    }
-    # Bucket Config
+    }' 
+   `# Bucket Config
     AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
     AWS_S3_REGION_NAME = 'eu-west-2'
     AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
     AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com' `
+
 23. Next go to heroku and set up the environment variables 
 * Go into the csv file that you downloaded and copy eash of the varaibles into the heroku settings
 24. Create a file in the root directory called custom_storage.py 
@@ -219,12 +239,12 @@ class StaticStorage(S3Boto3Storage):
 class MediaStorage(S3Boto3Storage):
     location = settings.MEDIAFILES_LOCATION `
 25. Go inot settings.py and add the following AWS settings:
-` # Static and media files
+`# Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
-    MEDIAFILES_LOCATION = 'media'
-    # Override static and media URLs in production
+    MEDIAFILES_LOCATION = 'media'`
+`# Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
     MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/' `
 26. Next you will need to load the media files to the s3 bucket 
@@ -245,16 +265,3 @@ class MediaStorage(S3Boto3Storage):
 #### Other 
 * I would like to thank all those i work with for the continued suppport and motivation and for always helping me believe in myself.
 * And all those from tutor support who helped me figure out any issues i had
-
-
-seo - keywords
-wordtracker.com -see how many time a key word is searched for 
-
-useful links for project 
-sitemaps
-xml-sitemaps.com - get a site map - root folder
-robox.txt - where a search engin cant go -sign of quality - root file
-" User-agent:*
-Disallow: 
-url to sitemap:
-

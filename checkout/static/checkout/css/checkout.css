@@ -13,7 +13,9 @@
 .container{
     color: #324934;
 }
-
+.checkout-container{
+    padding-bottom: 100px;
+}
 .form-control{
     width: 80%;
     display: inline-flex;
