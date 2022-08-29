@@ -82,7 +82,15 @@ Due to a trend in substainable fashion i decided to create an instagram page for
 * Django 
 
 ## Code Validation
+### HTML Validation
+### Css Validation
+### Python validation 
+
 ## Tests
+I did not complete any automated test due to time constrains. 
+
+### Lighthouse
+### Manual Tests
 
 ## Bugs & soultions
 * Stripe payment not Processing.
