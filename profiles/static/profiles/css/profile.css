@@ -17,8 +17,14 @@
     align-items: center;
     justify-content: center;
     height: 40px;
-    border: 1px solid #324934;
+    border: 2px solid #324934;
     transition: 300ms ease-out;
     background-color: #324934;
     color: white;
+}
+.submit-info-button:hover{
+    border: 2px solid #324934;
+    transition: 300ms ease-out;
+    background-color: #fff;
+    color: #324934;
 }

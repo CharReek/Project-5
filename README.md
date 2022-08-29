@@ -28,6 +28,7 @@ This section can help entise users to spend longer on the site by giving them a 
 * ### Tips
 This section provies Users/ shopper tips on how they can become more substainable. This may give the shopper some ideas of what they can do to upcycle clothing they already own.
 * ### Shop 
+Users can search for products in various different ways. once on the product page they also have the ability to sort the products. This can help users fidn what they are looking for and can even sort by price. This also caters to those who are on a budget giving them the opportunity to see products with in their price range. 
 * ### Shopping bag
 * ### Signin/ sign out / register functionality
 
@@ -43,8 +44,12 @@ There are mutiple features i would look to add in the future in order to provie 
 ## Code Validation
 ## Tests
 ## Bugs & soultions
+* Stripe payment not Processing.
+One major bug i experienced during this project was during the implimentation of stripe payment.Ii found that my payments were being created but were not successful. I spent many hourse searching solutions and went to tutor support for help. in the end it turend out to be that the webhook was not pulling the correct results due to a spelling error in the code. This was a simple fix however reading the stripe documentation gave me a good insight into the different functionalities that can be inplimented with stripe and i learned alot about how to find fixes for bugs.
+* 
 ## unfixed bugs 
 ## Deployment and Cloning 
+
 ## Credits 
 #### Images 
 * I got my product images & my hero image from [https://unsplash.com](https://unsplash.com) all the individual artits can be found in the name of the image
@@ -60,15 +65,6 @@ There are mutiple features i would look to add in the future in order to provie 
 * And all those from tutor support who helped me figure out any issues i had
 
 
-
-
-
-sell sustainable/ second hand clothing 
-
-
-
-Font - Quicksand
-
 seo - keywords
 wordtracker.com -see how many time a key word is searched for 
 
@@ -80,8 +76,3 @@ robox.txt - where a search engin cant go -sign of quality - root file
 Disallow: 
 url to sitemap:
 
-
-a custom selection of items - big sister swap 
- 
-
-Bootstrap collapsible nav bar - base code from documntation 
