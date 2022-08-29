@@ -57,7 +57,7 @@ I also made sure all images have alt tags.
 The site has a sitemap and a tobots.txt file 
 
 ## web marketing
-Due to a trend in substainable fashion i decided to create an instagram page for Reworn. This was due to instagram being where the target audience in. The younger generation are becoming more and more concerned with fast fashion. The use of being able to tag a stor will help get the word about the store out there. 
+Due to a trend in substainable fashion i decided to create an instagram page for Reworn. This was due to instagram being where the target audience in. The younger generation are becoming more and more concerned with fast fashion. The use of being able to tag a stor will help get the word about the store out there. [instagram]()
 
 
 ## Technologies Used 
@@ -87,7 +87,7 @@ Homepage
 Product Page 
 Product Detail Page - No erros
 Shopping Bag - No errors
-Checkout 
+Checkout - no errors 
 Accounts - No errors
 Edit products - No errors
 ### Css Validation
@@ -103,6 +103,7 @@ Edit products - No errors
 I did not complete any automated test due to time constrains. 
 
 ### Lighthouse
+Lighthouse testing results can be found in the medai folder under Lighthouse
 ### Manual Tests
 I tested my website at all stages through out the development, that way i could pick up any issues or bugs early on. 
 I did do a final Test before Submitting my project. This involved me going through ever aspect of the website making sure that all links go to the correct place and that nothing leads to a dead link. 
