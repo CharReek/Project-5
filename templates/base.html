@@ -59,7 +59,7 @@
                 </form>
             </div>
             <ul class="col-12 col-lg-4 my-auto py-1 py-lg-0">
-                <li class="list-inline list-unstyled text-center text-lg-right">
+                <div class="list-inline list-unstyled text-center text-lg-right">
                     <li class="list-inline-item dropdown">
                         <a class="text-white nav-link" href="#" id="user-options1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                             <div class="text-center">
@@ -80,7 +80,7 @@
                             {% endif %}
                         </div>
                     </li>
-                    <div class="list-inline-item">
+                    <li class="list-inline-item">
                         <a class="{% if grand_total %}text-info font-weight-bold{% else %}text-white{% endif %} nav-link" href="{% url 'view_bag' %}">
                             <div class="text-center">
                                 <div><i class="fas fa-shopping-bag fa-lg"></i></div>
@@ -93,8 +93,8 @@
                                 </p>
                             </div>
                         </a>
-                    </div>
-                </li>
+                    </li>
+                </div>
             </ul>
         </div>
         <div class="row topnav-bg">

@@ -104,6 +104,10 @@ I did not complete any automated test due to time constrains.
 
 ### Lighthouse
 ### Manual Tests
+I tested my website at all stages through out the development, that way i could pick up any issues or bugs early on. 
+I did do a final Test before Submitting my project. This involved me going through ever aspect of the website making sure that all links go to the correct place and that nothing leads to a dead link. 
+I testes this on a variety of sizes of decided so it works on all different screens. 
+i made sure the check out process worked smoothly and that none admins could not edit or delete any products. 
 
 ## Bugs & soultions
 * Stripe payment not Processing.
