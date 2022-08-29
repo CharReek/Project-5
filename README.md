@@ -196,49 +196,37 @@ Webhooks
 * install django-storages
 * freeze requirements.txt
 * add the below to storage and installed apps 
-`
+` 
 if 'USE_AWS' in os.environ:
     # Cache control
     AWS_S3_OBJECT_PARAMETERS = {
         'Expires': 'Thu, 31 Dec 2099 20:00:00 GMT',
         'CacheControl': 'max-age=94608000',
     }
-
     # Bucket Config
     AWS_STORAGE_BUCKET_NAME = os.getenv('AWS_STORAGE_BUCKET_NAME')
     AWS_S3_REGION_NAME = 'eu-west-2'
     AWS_ACCESS_KEY_ID = os.getenv('AWS_ACCESS_KEY_ID')
     AWS_SECRET_ACCESS_KEY = os.getenv('AWS_SECRET_ACCESS_KEY')
-    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com'
-`
+    AWS_S3_CUSTOM_DOMAIN = f'{AWS_STORAGE_BUCKET_NAME}.s3.amazonaws.com' `
 23. Next go to heroku and set up the environment variables 
 * Go into the csv file that you downloaded and copy eash of the varaibles into the heroku settings
 24. Create a file in the root directory called custom_storage.py 
-`
-from django.conf import settings
+` from django.conf import settings
 from storages.backends.s3boto3 import S3Boto3Storage
-
-
 class StaticStorage(S3Boto3Storage):
     location = settings.STATICFILES_LOCATION
-
-
 class MediaStorage(S3Boto3Storage):
-    location = settings.MEDIAFILES_LOCATION
-`
+    location = settings.MEDIAFILES_LOCATION `
 25. Go inot settings.py and add the following AWS settings:
-`
-    # Static and media files
+` # Static and media files
     STATICFILES_STORAGE = 'custom_storages.StaticStorage'
     STATICFILES_LOCATION = 'static'
     DEFAULT_FILE_STORAGE = 'custom_storages.MediaStorage'
     MEDIAFILES_LOCATION = 'media'
-
     # Override static and media URLs in production
     STATIC_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{STATICFILES_LOCATION}/'
-    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/'
-
-`
+    MEDIA_URL = f'https://{AWS_S3_CUSTOM_DOMAIN}/{MEDIAFILES_LOCATION}/' `
 26. Next you will need to load the media files to the s3 bucket 
 27. Go to the bucket page 
 28. Create new folder called media 
