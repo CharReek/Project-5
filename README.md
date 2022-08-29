@@ -85,13 +85,19 @@ Due to a trend in substainable fashion i decided to create an instagram page for
 ### HTML Validation
 Homepage 
 Product Page 
-Product Detail Page
-Shopping Bag 
+Product Detail Page - No erros
+Shopping Bag - No errors
 Checkout 
-Accounts
-Profile 
+Accounts - No errors
+Edit products - No errors
 ### Css Validation
-### Python validation 
+Homepage - No errors
+Product Page - No errors
+Product Detail Page - No errors
+Shopping Bag - No errors
+Checkout No errors
+Accounts - No errors
+Edit products - No errors
 
 ## Tests
 I did not complete any automated test due to time constrains. 
