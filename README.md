@@ -1,8 +1,14 @@
 # Reworn
 
 ## UX
+Reworn is a website that provides users with a eco friendly way to shop.The green colour scheme represnts nature this help solidify the eco friendly nature of the website.
+
+Users can browse different parts of the website by selecting what products they want to view. They can then view all the items they have in the shoipping bag and make a payment through Stripe payment. 
+
+Users can also log into their account and view previous orders and change the saved delivery details
+
 ## Purpose
-The purpose of this website is to stop more and more clothing ending up in landfills as this is an huge issue in todays society. 
+The purpose of this website is to stop more and more clothing ending up in landfills as this is an huge issue in todays society.The website provies a space where shoppers can find Substinably sources clothing that dosent hurt the enviroment.Users then can then make a purchase.
 
 ## Userstories
 ## Wireframes
@@ -37,7 +43,7 @@ There are mutiple features i would look to add in the future in order to provie 
 ## Code Validation
 ## Tests
 ## Bugs & soultions
-##  unfixed bugs 
+## unfixed bugs 
 ## Deployment and Cloning 
 ## Credits 
 #### Images 
