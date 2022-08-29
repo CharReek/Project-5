@@ -84,7 +84,7 @@ Due to a trend in substainable fashion i decided to create an instagram page for
 ## Code Validation
 ### HTML Validation
 Homepage 
-Product Page 
+Product Page - no errors
 Product Detail Page - No erros
 Shopping Bag - No errors
 Checkout - no errors 
