@@ -67,12 +67,12 @@ class EditPostDetail(UpdateView):
     fields = ['content', 'excerpt', 'title']
     # fields = ['body']
     template_name = 'post_edit.html'
-     
+
     def get_success_url(self):
         slug = self.kwargs['slug']
         return reverse_lazy('post_detail', kwargs={'slug': slug})
-    
+
 class DeletePostDetail(DeleteView):
-    model = Post 
+    model = Post
     template_name = 'post_delete.html'
     success_url = reverse_lazy('home')
