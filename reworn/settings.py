@@ -51,6 +51,7 @@ INSTALLED_APPS = [
     'profiles',
     'storages',
     'blog',
+    'django_summernote',
 
 ]
 
