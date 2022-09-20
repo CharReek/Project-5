@@ -1,0 +1,88 @@
+{% extends 'base.html' %} {% block content %}
+
+{% load crispy_forms_tags %}
+
+
+<div class="masthead">
+    <div class="container">
+        <div class="row g-0 post-header">
+            <h1 class="post-title titles">
+                {{ post.title }}</h1>
+            <h5 class="post-subtitle">{{ post.author }} | {{ post.created_on }}</h5>
+            {% if request.user == post.author %}
+            <div class="edit-delete">
+                <a href="{% url 'edit_post' post.pk post.slug %}" ><i class="far fa-edit"></i></a>
+                <a href="{% url 'delete_post' post.pk post.slug %}"><i class="fas fa-trash"></i></a>
+            </div>
+            {% endif %}
+        </div>
+    </div>
+</div>
+
+<div class="container">
+    <div class="col m-4 pb-3">
+        <div class="row justify-content-start">
+            <div class="card-body">
+                <div class="col-sm-12 align-self-center">
+                    <div class="card-text">
+                        {{ post.content | safe }}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+            <hr>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-8  mb-4  mt-3">
+            <div class="card-body comment-section">
+                <h5 class="comment-title"> <i class="fa-solid fa-comment-dots">  </i>  Comments: </h5>
+                {% for comment in comments %}
+                <div class="comment-container">
+                    {{ comment.body | linebreaks }} 
+                    <h5 >
+                        {{ comment.name }}
+                        <span>
+                            {{ comment.created_on }}
+                        </span>
+                    </h5>
+                </div>
+                {% endfor %}
+
+                {% if commented %}
+                <div class="alert alert-success" role="alert">
+                    Your comment is awaiting approval
+                </div>
+                {% else %}
+
+                {% if user.is_authenticated %}
+                <h5>Share your thoughts:</h5>
+                <form method="post">
+                    <div class="crispy_form">
+                        {{ comment_form | crispy }}
+                        {% csrf_token %}
+                    </div>
+                    <button type="submit" class="btn btn-signup submit-btn">Submit</button>
+                </form>
+                {% else %}
+                <div> 
+                    <a class="comment-link" href="{% url 'account_login' %}"> Sign in </a> or <a class="comment-link" href="{% url 'account_signup' %}">Register</a> to get involved in the conversation 
+                </div>
+                {% endif %}
+                {% endif %}
+            </div>
+        </div>
+        <div class="col-md-4 mb-4 mt-3 lookbook-column">
+            <h5> Like what you see?</h5>
+            <p> All outfit details can be found in the lookbook </p>
+            <form action="{% url 'lookbook' %}" method="post">
+            <button class="btn submit-btn"> Lookbook </button>
+            </form>
+        </div>
+    </div>
+</div>
+
+{% endblock content %}
