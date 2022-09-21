@@ -1,12 +1,21 @@
 {% extends 'base.html' %} {% block content %}
 
 {% load crispy_forms_tags %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div> 
+    </div>
+</div>
 
 <div class="container">
     <div class="col m-4 pb-3">
         <div class="row justify-content-start">
             <div class="card-body">
+                <div class="image-container-pd">
+                    <img class="card-img-top" src="{{ post.image.url }}" alt="{{ post.title }}">
+                </div>
                 <div class="col-sm-12 align-self-center">
+                    <h2 class="card-title">{{ post.title }}</h2>
                     <div class="card-text">
                         {{ post.content | safe }}
                     </div>
@@ -20,7 +29,7 @@
         </div>
     </div>
     <div class="row">
-        <div class="col-md-8  mb-4  mt-3">
+        <div class="col-md-12  mb-4  mt-3">
             <div class="card-body comment-section">
                 <h5 class="comment-title"> <i class="fa-solid fa-comment-dots">  </i>  Comments: </h5>
                 {% for comment in comments %}
@@ -48,7 +57,7 @@
                         {{ comment_form | crispy }}
                         {% csrf_token %}
                     </div>
-                    <button type="submit" class="btn btn-signup submit-btn">Submit</button>
+                    <button type="submit" class="btn btn-signup submit-button">Submit</button>
                 </form>
                 {% else %}
                 <div> 
@@ -57,13 +66,6 @@
                 {% endif %}
                 {% endif %}
             </div>
-        </div>
-        <div class="col-md-4 mb-4 mt-3 lookbook-column">
-            <h5> Like what you see?</h5>
-            <p> All outfit details can be found in the lookbook </p>
-            <form action="{% url 'lookbook' %}" method="post">
-            <button class="btn submit-btn"> Lookbook </button>
-            </form>
         </div>
     </div>
 </div>

@@ -348,6 +348,109 @@ color: white;
         padding-top: 132px;
     }
     
-    
 
+}
+
+/* BLog */
+.blog-layout-main, 
+.blog-layout{
+    justify-content: center;
+}
+
+.blog-layout-main{
+    padding: 30px 10px 0;
+    margin-bottom: 100px;
+}
+.card-title{
+    position:relative;
+    text-decoration: none;
+    margin: 25px 0px;
+    display: inline;
+}
+
+.card-text{
+    text-align: center;
+}
+
+.card-text:last-child {
+    margin-bottom: 15px;
+    padding-top: 20px;
+}
+.card-body{
+    text-align: center;
+}
+
+.blog-post-home{
+    border-bottom: 1px solid black
+}
+
+.image-container img{
+    width: 100%;
+    height: auto;
+    border: 1px solid black;
+    transition: transform 3.1s;
+    opacity: 1;
+}
+.image-container{
+    transition: transform ease-out;
+    opacity: 1;
+    background-color: rgba(0, 0, 0, 0.5);
+    margin-bottom:20px;
+}
+.image-container-pd img{
+    width: 40%;
+    height: auto;
+    border: 1px solid black;
+    transition: transform 3.1s;
+    opacity: 1;
+}
+.image-container-pd{
+    transition: transform ease-out;
+    opacity: 1;
+    margin-bottom:20px;
+}
+
+
+.shop-the-look{
+    text-align: center;
+    margin: 10px;
+    text-decoration: underline solid 3px #324934;
+}
+.page-link{
+    background-color: #324934;
+    color: black;
+    border-radius: 25px;
+    border: black solid 2px;
+}
+
+.header-image{
+    display: block;
+    margin: auto;
+}
+.header-container{
+    margin: 30px 0;
+}
+
+
+/* ------------------ Comments --------------*/ 
+
+textarea#id_body{
+    height: 50px;
+    width: 50%;
+    margin: auto;
+    padding: 10px;
+}
+
+.comment-title{
+    justify-content: center;
+    text-align: center;
+    text-decoration: underline solid 1px #324934;
+}
+
+label.requiredField{
+   display: none; 
+   margin: 30px 10px;
+}
+.comment-link{
+    text-decoration: underline 2px #324934;
 }
