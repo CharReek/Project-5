@@ -7,7 +7,7 @@ from .forms import CommentForm
 class PostList(generic.ListView):
     model = Post
     queryset = Post.objects.filter(status=1).order_by('-created_on')
-    template_name = 'blog_post.html'
+    template_name = "blog/blog_post.html"
     paginate_by = 6
 
 
@@ -23,7 +23,7 @@ class PostDetail(View):
 
         return render(
             request,
-            "post_detail.html",
+            "blog/post_detail.html",
 
             {
                 "post": post,
@@ -56,7 +56,7 @@ class PostDetail(View):
 
         return render(
             request,
-            "post_detail.html",
+            "blog/post_detail.html",
 
             {
                 "post": post,
