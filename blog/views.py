@@ -23,7 +23,7 @@ class PostDetail(View):
 
         return render(
             request,
-            "lookbook_posts.html",
+            "post_detail.html",
 
             {
                 "post": post,
