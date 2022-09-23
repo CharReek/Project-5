@@ -31,11 +31,11 @@
     <div class="row">
         <div class="col-md-12  mb-4  mt-3">
             <div class="card-body comment-section">
-                <h5 class="comment-title"> <i class="fa-solid fa-comment-dots">  </i>  Comments: </h5>
+                <h5 class="comment-title" rel="ugc"> <i class="fa-solid fa-comment-dots">  </i>  Comments: </h5>
                 {% for comment in comments %}
                 <div class="comment-container">
                     {{ comment.body | linebreaks }} 
-                    <h5 >
+                    <h5>
                         {{ comment.name }}
                         <span>
                             {{ comment.created_on }}
