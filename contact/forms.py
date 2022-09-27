@@ -1,13 +1,14 @@
 from django import forms 
-from .models import ContactForm
+from .models import ContactModel
 
-class ContactForms(form.ModelForm):
+
+class ContactForms(forms.ModelForm):
     """ a contact form that allows users to contact site admin """
     
     class Meta:
-        model = ContactForm
+        model = ContactModel
         fields = [
             "name",
-            "email",
+            "contact_email",
             "message"
         ]

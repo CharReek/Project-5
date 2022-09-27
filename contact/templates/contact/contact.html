@@ -1,0 +1,32 @@
+{% extends "base.html" %}
+{% load static %}
+{% load bag_tools %}
+
+{% block extra_css %}
+<link rel="stylesheet" href="{% static 'checkout/css/checkout.css' %}">
+{% endblock %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div> 
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="contact-form-header">
+    <h1 class="cf-header"> Contact Us </h1>
+    <p class="sub-header"> Have Questions? Please fill out the below form and one of our team will get back to you shortly</p>
+</div>
+<div class="contact-form">
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit" class="submit-button"> Submit</button>
+    </form>
+</div>
+
+{% endblock %}
+

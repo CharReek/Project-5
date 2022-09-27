@@ -433,7 +433,7 @@ color: white;
 }
 
 
-/* ------------------ Comments --------------*/ 
+/* Comments */ 
 
 textarea#id_body{
     height: 50px;
@@ -458,3 +458,34 @@ label.requiredField{
 .comment-section{
     margin-bottom: 150px;
 }
+
+
+/* Contact form */ 
+
+.contact-form-header{
+    text-align: center;
+}
+.contact-form{
+    text-align: center;
+    padding-top: 20px;
+}
+
+.cf-header{
+    margin: auto;
+    text-align: center;
+    width: 80%;
+    color: #324934; 
+    padding-bottom: 25px;
+}
+input#id_message{
+    height: 200px;
+}
+input#id_message,
+input#id_email,
+input#id_name{
+    width: 60%;
+}
+label{
+    display: block;
+}
+/* Contact form end */ 
