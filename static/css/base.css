@@ -481,11 +481,17 @@ input#id_message{
     height: 200px;
 }
 input#id_message,
-input#id_email,
+input#id_contact_email,
 input#id_name{
     width: 60%;
 }
+/* Contact form end */ 
 label{
     display: block;
+    font-size: 1.2em;
+    font-weight: 700;
+    color: #324934;
 }
-/* Contact form end */ 
+input{
+    width: 40%;
+}
