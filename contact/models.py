@@ -5,8 +5,8 @@ from django.db import models
 class ContactModel(models.Model):
     """" customer contact form  """
     name = models.CharField(max_length=50, null=False, blank=False)
-    contact_email = models.EmailField(max_length=300, null=False, blank=False)
-    message = models.CharField(max_length=50)
+    contact_email = models.EmailField(max_length=50, null=False, blank=False)
+    message = models.CharField(max_length=250)
 
     class Meta:
         """ verbose name"""
