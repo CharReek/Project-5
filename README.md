@@ -57,7 +57,7 @@ I also made sure all images have alt tags.
 The site has a sitemap and a tobots.txt file 
 
 ## Web marketing
-Due to a trend in substainable fashion i decided to create mock up instagram and facebook ads for Reworn. This was due to instagram being where the target audience in. The younger generation are becoming more and more concerned with fast fashion. The use of being able to tag a stor will help get the word about the store out there. These ads will come up on the relevant peoples pages so they will be going direct to the target audience. These mock ups can be found in the media folder under Ad mockups 
+Due to a trend in substainable fashion i decided to create mock up instagram and facebook ads for Reworn. This was due to instagram being where the target audience in. The younger generation are becoming more and more concerned with fast fashion. The use of being able to tag a stor will help get the word about the store out there. These ads will come up on the relevant peoples pages so they will be going direct to the target audience. These mock ups can be found in the media folder under Ad mockups. I have also created a face book page that can be found here - [Facebook page](https://www.facebook.com/profile.php?id=100085659436099)
 
 
 ## Technologies Used 
@@ -107,13 +107,54 @@ Lighthouse testing results can be found in the medai folder under Lighthouse
 ### Manual Tests
 I tested my website at all stages through out the development, that way i could pick up any issues or bugs early on. 
 I did do a final Test before Submitting my project. This involved me going through ever aspect of the website making sure that all links go to the correct place and that nothing leads to a dead link. 
-I testes this on a variety of sizes of decided so it works on all different screens. 
+I tested this on a variety of sizes of decided so it works on all different screens. 
 i made sure the check out process worked smoothly and that none admins could not edit or delete any products. 
+
+#### Forms 
+I testes each form on the website by submitting a mixture of correct and in correct information. i did this to ensure that it would handle any errors correctly.Examples include but are not limited to:
+Login
+* Trying to sign in with a new email address that does not already ahve an account
+* Attempting to sign in with an incorrect password 
+* Signing up with a password that does not match. 
+Basket 
+* Submitting incorrect addresses and missing out required fields 
+* When signed in using the save information button and checking that it saves the information
+Customer profile 
+* Updating the form 
+* removing information from the form
+* Adding in new information
+#### Admin 
+I tested that everything on the admin site was onyl avaliable to admins and was not able to be accessed by general users. I tested this by : 
+* signing in as an admin and makign sure you can add update and delete products from both the front and back end 
+* i tested so that none admin users could not get onto these pages with a url, if they try this it redirect them to the sign in page. 
+* i tested that updating a product and adding a product in the front end adds the product or changes it as required when the item page or product page is refreshed 
+#### General user 
+I tested this as a general shopper i did this by: 
+* Browsing each section
+* using the sort by fiter 
+* Using the product button on the view all page
+* adding and removing products from my basket 
+* Adding 2 items of different sizes to my basket 
+* Updating quantities in the basket 
+* Selecting a quantity amount over 99 
+* Removing items from my basket 
+* goign though the chekc out process 
+* adding in incorrect card details 
+* Saving information when logged in 
+* going back to back from the check out 
+* Viewing and updating my profile 
+* view past orders via my profile 
+* Reading blog posts 
+* Commenting on blog posts when signed in 
+* Subscribing to the newsletter 
+* Submiting a contact us form
+
+All of these gave the expected results showing that the site was workign as expected for users. i made sure that i tested the site as i was building it in order to get know what had caused any bugs early on 
 
 ## Bugs & soultions
 * Stripe payment not Processing.
-One major bug i experienced during this project was during the implimentation of stripe payment.Ii found that my payments were being created but were not successful. I spent many hourse searching solutions and went to tutor support for help. in the end it turend out to be that the webhook was not pulling the correct results due to a spelling error in the code. This was a simple fix however reading the stripe documentation gave me a good insight into the different functionalities that can be inplimented with stripe and i learned alot about how to find fixes for bugs.
-* Non users being able to chekc out
+One major bug i experienced during this project was during the implimentation of stripe payment.Ii found that my payments were being created but were not successful. I spent many hours searching solutions and went to tutor support for helpn ,in the end it turned out to be that the webhook was not pulling the correct results due to a spelling error in the code. This was a simple fix however reading the stripe documentation gave me a good insight into the different functionalities that can be inplimented with stripe and i learned alot about how to find fixes for bugs.
+* Non users being able to check out
 This bug did not allow non users to chekc out, however once i fixed the above issue it also fixed this bug. 
 ## Unfixed bugs 
 * There are no current bugs that i am aware of at the time od deployment. 
