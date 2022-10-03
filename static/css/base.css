@@ -460,6 +460,16 @@ label.requiredField{
     margin-bottom: 150px;
 }
 
+/* 404 and 500 page */
+.error-container{
+    text-align: center;
+}
+.error-text{
+    font-weight: 700;
+    color: #324934;
+}
+/* 404 and 500 page end */
+
 
 /* Contact form */ 
 

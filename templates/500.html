@@ -11,20 +11,18 @@
 {% endblock %}
 
 {% block content %}
-<div>
-    <h1>
+<div class="error-container">
+    <h1 class="error-text">
         500 Server Error
     </h1>
     <h3>
-        oh no! Looks like soemthing has gone wrong.
+        Oh No! Looks like something has gone wrong.
     </h3>
     <h3>
         Please try again later
     </h3>
-</div>
-<hr class="w-50 mb-1 divider">
-<div>
+    <hr class="w-50 mb-1 divider">
     <h3> Go back to the Homepage</h3>
-    <button class="submit-button" type="submit">{% url "home" %}</button>
+    <button class="submit-button" type="submit" href=" {% url 'home' %}">Home</button>
 </div>
 {% endblock%}

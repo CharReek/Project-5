@@ -11,17 +11,15 @@
 {% endblock %}
 
 {% block content %}
-<div>
-    <h1>
+<div class="error-container">
+    <h1 class="error-text">
         404 Error
     </h1>
     <h3>
-        oh no! This page can not be found 
+        Oh No! This page can not be found 
     </h3>
-</div>
-<hr class="w-50 mb-1 divider">
-<div>
+    <hr class="w-50 mb-1 divider">
     <h3> Go back to the Homepage</h3>
-    <button class="submit-button" type="submit">{% url "home" %}</button>
+    <button class="submit-button" type="submit" href="{% url 'home' %}"> Home</button>
 </div>
 {% endblock%}
