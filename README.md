@@ -210,7 +210,7 @@ Your local clone has been created
 To access the stripe keys you will need to login and complete the following step
 1. Once logged in go to the developers tab
 2. One the left hand side there will be a tab for API keys select this. 
-3. here youy will find the stripe public and secret key
+3. here you will find the stripe public and secret key
 Webhooks 
 1. Go to the webhooks tab 
 2. Select add end point
