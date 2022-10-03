@@ -111,7 +111,7 @@ I tested this on a variety of sizes of decided so it works on all different scre
 i made sure the check out process worked smoothly and that none admins could not edit or delete any products. 
 
 #### Forms 
-I testes each form on the website by submitting a mixture of correct and in correct information. i did this to ensure that it would handle any errors correctly.Examples include but are not limited to:
+I tested each form on the website by submitting a mixture of correct and incorrect information. I did this to ensure that it would handle any errors correctly. Examples include but are not limited to:
 Login
 * Trying to sign in with a new email address that does not already ahve an account
 * Attempting to sign in with an incorrect password 
@@ -124,12 +124,12 @@ Customer profile
 * removing information from the form
 * Adding in new information
 #### Admin 
-I tested that everything on the admin site was onyl avaliable to admins and was not able to be accessed by general users. I tested this by : 
+I tested that everything on the admin site was only avaliable to admins and was not able to be accessed by general users. I tested this by : 
 * signing in as an admin and makign sure you can add update and delete products from both the front and back end 
 * i tested so that none admin users could not get onto these pages with a url, if they try this it redirect them to the sign in page. 
 * i tested that updating a product and adding a product in the front end adds the product or changes it as required when the item page or product page is refreshed 
 #### General user 
-I tested this as a general shopper i did this by: 
+In order to tested this as a general shopper i did the following but not limited to: 
 * Browsing each section
 * using the sort by fiter 
 * Using the product button on the view all page
@@ -149,7 +149,7 @@ I tested this as a general shopper i did this by:
 * Subscribing to the newsletter 
 * Submiting a contact us form
 
-All of these gave the expected results showing that the site was workign as expected for users. i made sure that i tested the site as i was building it in order to get know what had caused any bugs early on 
+All of these gave the expected results showing that the site was working as expected for users. I made sure that i tested the site as i was building it in order to get know what had caused any bugs early on. I also had my co workers test the site to see if they could find any bugs or issues they also compleated the above tests.
 
 ## Bugs & soultions
 * Stripe payment not Processing.
@@ -157,15 +157,16 @@ One major bug i experienced during this project was during the implimentation of
 * Non users being able to check out
 This bug did not allow non users to chekc out, however once i fixed the above issue it also fixed this bug. 
 ## Unfixed bugs 
-* There are no current bugs that i am aware of at the time od deployment. 
+* There are no current bugs that i am aware of at the time of deployment. 
 
 ## Deployment and Cloning 
+Following the below steps will show you how to deploy your project clone it and fork it. Deploying it at the begining will ensure the deployment is working early on and will rule out any issues with your code causing disruption to the initil deploy. This will then be avaliable to test on through out your project and help identify any issues yu may be having on your deployed site.
 
 1. Ensure all requirements are in the requirements foler by typing "pip3 freeze --local > requirements.txt" in the terminal 
 2. once this has been done git add, commit and push any changes made. 
 ### Heroku 
 3. Load up heroku.com and log in. If you do not already have an account you will need to create one. 
-4. Click the new button in the top right corner(for new users the button will appear in the center of the screen). Then choose 'Create new app'
+4. Click the new button in the top right corner (for new users the button will appear in the center of the screen). Then choose 'Create new app'
 5. Pick a name for your app- note this has to be unique.
 6. Select your region
 7. Then click create app
@@ -180,6 +181,7 @@ This bug did not allow non users to chekc out, however once i fixed the above is
 `web: gunicorn PROJ_NAME.wsgi`
 14. Naviagte to setting and add heroku to the ALLOWED_HOSTS
 15. Git add, commit and push the changes made.
+
 ### Deployment - Heroku
 16. Go back to the heroku app and go to deploy in the menu bar.
 17. Then go to the deployment method and select Github
@@ -188,11 +190,13 @@ This bug did not allow non users to chekc out, however once i fixed the above is
 20. Select enable automatic deploys. 
 21. Click deploy branch. 
 22. This will take a few minutes to deploy and then click view. 
+
 ### Forking the github repository
 Forking the repository means you are able to make a copy of the original repository meanign you can view and make changes without it affecting the origional repository
 1. Log into github and find the Github repository you ware wanting to clone 
 2. At the top of the repository (above settings) there will be a fork button. Click this
 3. You will now have a copy of the reposiroty in your github account.
+
 ### Making a clone 
 1. Log into git hub and go to the repository you want to clone
 2. Under the name thewre will be a 'clone or download button. Click this 
