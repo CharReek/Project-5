@@ -21,8 +21,10 @@
     <h3>
         Please try again later
     </h3>
-    <hr class="w-50 mb-1 divider">
+    <hr class="w-50 mb-3 divider">
     <h3> Go back to the Homepage</h3>
-    <button class="submit-button" type="submit" href=" {% url 'home' %}">Home</button>
+    <a href="{% url 'home' %}" class="btn rounded-2 checkout-button">
+        <span>Home</span>
+    </a>
 </div>
 {% endblock%}
