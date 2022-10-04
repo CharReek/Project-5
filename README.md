@@ -113,7 +113,7 @@ i made sure the check out process worked smoothly and that none admins could not
 #### Forms 
 I tested each form on the website by submitting a mixture of correct and incorrect information. I did this to ensure that it would handle any errors correctly. Examples include but are not limited to:
 Login
-* Trying to sign in with a new email address that does not already ahve an account
+* Trying to sign in with a new email address that does not already have an account
 * Attempting to sign in with an incorrect password 
 * Signing up with a password that does not match. 
 Basket 
@@ -150,6 +150,8 @@ In order to tested this as a general shopper i did the following but not limited
 * Submiting a contact us form
 
 All of these gave the expected results showing that the site was working as expected for users. I made sure that i tested the site as i was building it in order to get know what had caused any bugs early on. I also had my co workers test the site to see if they could find any bugs or issues they also compleated the above tests.
+
+More indeth documentation regarding testing can be found here [Testing document pdf](https://github.com/CharReek/Project-5/blob/main/media/Project5test.pdf)
 
 ## Bugs & soultions
 * Stripe payment not Processing.

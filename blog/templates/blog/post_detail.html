@@ -16,6 +16,12 @@
                 </div>
                 <div class="col-sm-12 align-self-center">
                     <h2 class="card-title">{{ post.title }}</h2>
+                    {% if request.user == post.author %}
+                        <div class="edit-delete">
+                            <a href="{% url 'edit_post' post.slug %}"><i class="fa-solid fa-pen-to-square fa-2x m-4"></i></a>
+                            <a href="{% url 'delete_post' post.slug %}"><i class="fa-solid fa-trash-can fa-2x m-4"></i></a>
+                        </div>
+                    {% endif %}
                     <div class="card-text">
                         {{ post.content | safe }}
                     </div>
