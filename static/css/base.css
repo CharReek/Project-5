@@ -316,7 +316,7 @@ color: white;
 /* Slightly larger container on xl screens */
 @media (min-width: 1200px) {
   .container {
-    max-width: 98%;
+    max-width: 99%;
   }
 
 }

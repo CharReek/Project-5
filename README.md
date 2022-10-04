@@ -201,7 +201,7 @@ Forking the repository means you are able to make a copy of the original reposit
 
 ### Making a clone 
 1. Log into git hub and go to the repository you want to clone
-2. Under the name thewre will be a 'clone or download button. Click this 
+2. Under the name there will be a 'clone or download button. Click this 
 3. Select clone by HTTPS and copy the link
 4. open the commandline interface
 5. Change the current working directory to the locationt that you want to cloned directory to be. 
