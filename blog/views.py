@@ -1,6 +1,7 @@
 from django.shortcuts import render, get_object_or_404
 from django.views import generic, View
 from django.urls import reverse_lazy
+from django.contrib.auth.mixins import UserPassesTestMixin
 from django.views.generic.edit import UpdateView, DeleteView
 from .models import Post, Image
 from .forms import CommentForm
@@ -64,18 +65,27 @@ class PostDetail(View):
         )
 
 
-class EditPostDetail(UpdateView):
+class EditPostDetail(UserPassesTestMixin, UpdateView):
+    """model to delete blog post"""
     model = Post
     fields = ['content', 'excerpt', 'title']
-    # fields = ['body']
     template_name = 'blog/post_edit.html'
 
     def get_success_url(self):
         slug = self.kwargs['slug']
         return reverse_lazy('post_detail', kwargs={'slug': slug})
 
+    def test_func(self):
+        """check user is author or throw 403"""
+        return self.request.user == self.get_object().author
 
-class DeletePostDetail(DeleteView):
+
+class DeletePostDetail(UserPassesTestMixin, DeleteView):
+    """model to delete blog post"""
     model = Post
     template_name = 'blog/post_delete.html'
     success_url = reverse_lazy('home')
+
+    def test_func(self):
+        """check user is author or throw 403"""
+        return self.request.user == self.get_object().author

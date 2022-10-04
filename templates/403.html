@@ -1,0 +1,27 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block page_header %}
+<div class="container header-container">
+    <div class="row">
+        <div class="col"></div> 
+    </div>
+</div>
+
+{% endblock %}
+
+{% block content %}
+<div class="error-container">
+    <h1 class="error-text">
+        403 unauthorized 
+    </h1>
+    <h3>
+        Oh No! You are not authorized to perform this action
+    </h3>
+    <hr class="w-50 mb-3 divider">
+    <h3> Go back to the Homepage</h3>
+    <a href="{% url 'home' %}" class="btn rounded-2 submit-button">
+        <span>Home</span>
+    </a>
+</div>
+{% endblock%}
