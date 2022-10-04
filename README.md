@@ -98,6 +98,9 @@ Shopping Bag - No errors
 Checkout No errors
 Accounts - No errors
 Edit products - No errors
+### Python Validation
+I installed the PEP8 validator to my gitpod workspace. After doing this i went though each file and check there was no problems via the problems tab
+All files came back with no errors. Minus the code that is already generated in the setting.py file.
 
 ## Tests
 I did not complete any automated test due to time constrains. 
