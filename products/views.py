@@ -39,10 +39,12 @@ def all_products(request):
         if 'q' in request.GET:
             query = request.GET['q']
             if not query:
-                messages.error(request, "Unfortunatley no result matched your query")
+                messages.error(request,
+                               "Unfortunatley no result matched your query")
                 return redirect(reverse('products'))
 
-            queries = Q(name__icontains=query) | Q(description__icontains=query)
+            queries = Q(name__icontains=query) | \
+                Q(description__icontains=query)
             products = products.filter(queries)
 
     current_sorting = f'{sort}_{direction}'
@@ -67,21 +69,24 @@ def product_detail(request, product_id):
 
     return render(request, 'products/product_detail.html', context)
 
+
 @login_required
 def add_product(request):
     """ add a product to the store"""
     if not request.user.is_superuser:
         messages.error(request, 'You do not have the permissions required.')
         return redirect(reverse('home'))
-    
+
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES)
         if form.is_valid():
             product = form.save()
-            messages.success(request, 'This product has been successfully added')
+            messages.success(request,
+                             'This product has been successfully added')
             return redirect(reverse('product_detail', args=[product.id]))
         else:
-            messages.error(request, 'This product could not be added. Please try again')
+            messages.error(request,
+                           'This product could not be added. Please try again')
     else:
         form = ProductForm()
 
@@ -92,13 +97,14 @@ def add_product(request):
 
     return render(request, template, context)
 
+
 @login_required
 def edit_product(request, product_id):
     """ edit and update products"""
     if not request.user.is_superuser:
         messages.error(request, 'You do not have the permissions required.')
         return redirect(reverse('home'))
-    
+
     product = get_object_or_404(Product, pk=product_id)
     if request.method == 'POST':
         form = ProductForm(request.POST, request.FILES, instance=product)
@@ -106,8 +112,9 @@ def edit_product(request, product_id):
             form.save()
             messages.success(request, 'This product has been updated')
             return redirect(reverse('product_detail', args=[product.id]))
-        else: 
-            messages.error(request, 'Failed to update product. Please try again!')
+        else:
+            messages.error(request,
+                           'Failed to update product. Please try again!')
     else:
         form = ProductForm(instance=product)
         messages.info(request, f'You are currently editing {product.name}')
@@ -120,13 +127,14 @@ def edit_product(request, product_id):
 
     return render(request, template, context)
 
+
 @login_required
 def delete_product(request, product_id):
     """ delete a product """
     if not request.user.is_superuser:
         messages.error(request, 'You do not have the permissions required.')
         return redirect(reverse('home'))
-    
+
     product = get_object_or_404(Product, pk=product_id)
     product.delete()
     messages.success(request, 'Product deleted')

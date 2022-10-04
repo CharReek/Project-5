@@ -20,7 +20,7 @@ class PostDetail(View):
         queryset = Post.objects.filter(status=1)
         post = get_object_or_404(queryset, slug=slug)
         comments = post.comments.filter(approved=True).order_by('created_on')
-        
+
         return render(
             request,
             "blog/post_detail.html",
@@ -62,20 +62,20 @@ class PostDetail(View):
 
             },
         )
-   
+
+
 class EditPostDetail(UpdateView):
     model = Post
     fields = ['content', 'excerpt', 'title']
     # fields = ['body']
     template_name = 'blog/post_edit.html'
-     
+
     def get_success_url(self):
         slug = self.kwargs['slug']
         return reverse_lazy('post_detail', kwargs={'slug': slug})
 
 
- 
 class DeletePostDetail(DeleteView):
-    model = Post 
+    model = Post
     template_name = 'blog/post_delete.html'
     success_url = reverse_lazy('home')

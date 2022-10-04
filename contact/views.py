@@ -23,13 +23,15 @@ def contact(request):
             message = "/n".join(body.values())
 
             try:
-                send_mail(subject, message, 'admin@example.com', ['admin@example.com'])
+                send_mail(subject, message, 'admin@example.com',
+                          ['admin@example.com'])
 
             except BadHeaderError:
                 messages.error(request, 'Invalid Header Found')
                 return HttpResponse('Invalid header found')
-            messages.success(request, 'Your form has been successfuly submitted!')
+            messages.success(request, 'Your form has been \
+                successfuly submitted!')
             return(redirect(contact))
 
     form = ContactForms
-    return render(request, "contact/contact.html", {'form':form})
+    return render(request, "contact/contact.html", {'form': form})
