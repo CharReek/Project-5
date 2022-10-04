@@ -16,7 +16,7 @@
                         <div class="card mb-4 border-0">
                             <div class="card-body blog-post-home">
                                 <div class="image-container">
-                                    <img class="card-img-top " src="{{ post.image.url }}" alt="blog post image relating to the article">
+                                    <img class="card-img-top " src="{{ post.image.url }}"  alt="{{ post.title }}">
                                 </div>
                                 <a href="{% url 'post_detail' post.slug  %}"  class="post-link">
                                     <h2 class="card-title">{{ post.title }}</h2>
