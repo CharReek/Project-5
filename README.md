@@ -8,9 +8,12 @@ Users can also log into their account and view previous orders and change the sa
 The purpose of this website is to stop more and more clothing ending up in landfills as this is an huge issue in todays society.The website provies a space where shoppers can find Substinably sources clothing that dosent hurt the enviroment.Users then can then make a purchase.
 
 ## Wireframes
-All wireframs can be found in the media folder under Wireframes. 
+All wireframs can be found in the media folder under Wireframes.
+
+[https://github.com/CharReek/Project-5/tree/main/media/Wireframes](https://github.com/CharReek/Project-5/tree/main/media/Wireframes)
 
 I wanted my website to be clean and to the point as personally i hate when a webstire is cluttered. It makes things hard to find and gives the users a poor experience. This is somethign i kept in my mind though out the duration of the website design. 
+
 
 ## Userstories
 All my user storeies can be found in the project board - [https://github.com/CharReek/Project-5/projects](https://github.com/CharReek/Project-5/projects)
@@ -59,6 +62,16 @@ The site has a sitemap and a tobots.txt file
 ## Web marketing
 Due to a trend in substainable fashion i decided to create mock up instagram and facebook ads for Reworn. This was due to instagram being where the target audience in. The younger generation are becoming more and more concerned with fast fashion. The use of being able to tag a stor will help get the word about the store out there. These ads will come up on the relevant peoples pages so they will be going direct to the target audience. These mock ups can be found in the media folder under Ad mockups. I have also created a face book page that can be found here - [Facebook page](https://www.facebook.com/profile.php?id=100085659436099)
 
+Facebook page
+![Facebook image 1](https://github.com/CharReek/Project-5/blob/main/media/Readme%20images%20resubmit/facebookpage.png)
+![Facebook image 2](https://github.com/CharReek/Project-5/blob/main/media/Readme%20images%20resubmit/facebookpage2.png)
+
+Facebook ad mockup
+![facebook ad mockup](https://github.com/CharReek/Project-5/blob/main/media/Ad%20Mockups/FacebookAd.png)
+
+Instagram ad mockup
+![instagram ad mockup](https://github.com/CharReek/Project-5/blob/main/media/Ad%20Mockups/InstaAd.png)
+
 
 ## Technologies Used 
 ### Languages used 
@@ -85,28 +98,49 @@ Due to a trend in substainable fashion i decided to create mock up instagram and
 ### HTML Validation
 Homepage - No errors
 Product Page - no errors
-Product Detail Page - No erros
+Product Detail Page - No errors
+blog page - no errors
+blog posts - no errors
 Shopping Bag - No errors
 Checkout - no errors 
 Accounts - No errors
 Edit products - No errors
+Edit blog post - no errors
+add product - No errors
+order conformation - no errors
+profile - No errors
+log in - No errors
+log out -No errors
+sign up - No errors
 ### Css Validation
 Homepage - No errors
 Product Page - No errors
 Product Detail Page - No errors
+blog page - No errors
+blog posts - No erros
 Shopping Bag - No errors
 Checkout No errors
 Accounts - No errors
 Edit products - No errors
+Edit blog post - no errors
+add product - No errors
+order conformation - no errors
+profile - No errors
+log in - No errors
+log out -No errors
+sign up - No errors
 ### Python Validation
 I installed the PEP8 validator to my gitpod workspace. After doing this i went though each file and check there was no problems via the problems tab
-All files came back with no errors. Minus the code that is already generated in the setting.py file.
+All files came back with no errors. Minus the code that is alreadygenerated in the setting.py file.
 
 ## Tests
 I did not complete any automated test due to time constrains. 
 
 ### Lighthouse
-Lighthouse testing results can be found in the medai folder under Lighthouse
+Lighthouse testing results 
+
+![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+
 ### Manual Tests
 I tested my website at all stages through out the development, that way i could pick up any issues or bugs early on. 
 I did do a final Test before Submitting my project. This involved me going through ever aspect of the website making sure that all links go to the correct place and that nothing leads to a dead link. 
