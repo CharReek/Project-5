@@ -62,14 +62,16 @@ The site has a sitemap and a tobots.txt file
 ## Web marketing
 Due to a trend in substainable fashion i decided to create mock up instagram and facebook ads for Reworn. This was due to instagram being where the target audience in. The younger generation are becoming more and more concerned with fast fashion. The use of being able to tag a stor will help get the word about the store out there. These ads will come up on the relevant peoples pages so they will be going direct to the target audience. These mock ups can be found in the media folder under Ad mockups. I have also created a face book page that can be found here - [Facebook page](https://www.facebook.com/profile.php?id=100085659436099)
 
-Facebook page
+#### Facebook page
+
 ![Facebook image 1](https://github.com/CharReek/Project-5/blob/main/media/Readme%20images%20resubmit/facebookpage.png)
 ![Facebook image 2](https://github.com/CharReek/Project-5/blob/main/media/Readme%20images%20resubmit/facebookpage2.png)
 
-Facebook ad mockup
+#### Facebook ad mockup
+
 ![facebook ad mockup](https://github.com/CharReek/Project-5/blob/main/media/Ad%20Mockups/FacebookAd.png)
 
-Instagram ad mockup
+#### Instagram ad mockup
 ![instagram ad mockup](https://github.com/CharReek/Project-5/blob/main/media/Ad%20Mockups/InstaAd.png)
 
 
@@ -139,7 +141,7 @@ I did not complete any automated test due to time constrains.
 ### Lighthouse
 Lighthouse testing results 
 
-![This is an image](https://myoctocat.com/assets/images/base-octocat.svg)
+![Lighthouse Results](https://github.com/CharReek/Project-5/blob/main/media/Readme%20images%20resubmit/LighthouseDesktop.png)
 
 ### Manual Tests
 I tested my website at all stages through out the development, that way i could pick up any issues or bugs early on. 
@@ -201,7 +203,7 @@ This bug did not allow non users to chekc out, however once i fixed the above is
 ## Deployment and Cloning 
 Following the below steps will show you how to deploy your project clone it and fork it. Deploying it at the begining will ensure the deployment is working early on and will rule out any issues with your code causing disruption to the initil deploy. This will then be avaliable to test on through out your project and help identify any issues yu may be having on your deployed site.
 
-1. Ensure all requirements are in the requirements foler by typing "pip3 freeze --local > requirements.txt" in the terminal 
+1. Ensure all requirements are in the requirements folder by typing "pip3 freeze --local > requirements.txt" in the terminal 
 2. once this has been done git add, commit and push any changes made. 
 ### Heroku 
 3. Load up heroku.com and log in. If you do not already have an account you will need to create one. 

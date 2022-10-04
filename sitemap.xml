@@ -9,172 +9,202 @@
 
 <url>
   <loc>https://charreek-project-5.herokuapp.com/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>1.00</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/accounts/signup/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/accounts/login/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/bag/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/?category=dresses</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/?category=tops</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/?category=bottoms</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/?category=jackets,coats</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://charreek-project-5.herokuapp.com/products/?category=dresses,tops,bottoms,jackets,coats</loc>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/?category=hair_accessories</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/?category=bags</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/?category=scarfs</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/?category=hair_accessories,bags,scarfs</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://charreek-project-5.herokuapp.com/blog/</loc>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
+  <priority>0.80</priority>
+</url>
+<url>
+  <loc>https://charreek-project-5.herokuapp.com/contact/</loc>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.80</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/accounts/password/reset/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/16/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/17/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/18/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/32/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://charreek-project-5.herokuapp.com/products/9/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/19/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/20/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://charreek-project-5.herokuapp.com/products/9/</loc>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/11/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://charreek-project-5.herokuapp.com/products/21/</loc>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/?category=jackets</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/?category=coats</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/7/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
-  <priority>0.64</priority>
-</url>
-<url>
-  <loc>https://charreek-project-5.herokuapp.com/products/22/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/12/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://charreek-project-5.herokuapp.com/products/22/</loc>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/13/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/23/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/24/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/14/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/25/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/15/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 <url>
   <loc>https://charreek-project-5.herokuapp.com/products/26/</loc>
-  <lastmod>2022-08-29T19:42:39+00:00</lastmod>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://charreek-project-5.herokuapp.com/blog/what-im-loving-right-now/</loc>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
+  <priority>0.64</priority>
+</url>
+<url>
+  <loc>https://charreek-project-5.herokuapp.com/blog/designer-gifts-under-100/</loc>
+  <lastmod>2022-10-04T22:03:21+00:00</lastmod>
   <priority>0.64</priority>
 </url>
 
